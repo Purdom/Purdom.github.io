@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  {% if page.description %}
+  <meta name="description" content="{{ page.description }}">
+  {% endif %}
+  <meta name="author" content="{{ site.author }}">
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/i/icon.png">
+
+  <!-- Feeds -->
+  <link rel="alternate" type="application/rss+xml" title="Atom" href="/atom.xml">
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml">
+
+  <!-- Style Sheets -->
+  <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700|Source+Sans+Pro' rel='stylesheet' type='text/css'><!-- this is the font Jeremy's using, change it! -->
+  <link rel="stylesheet" href="/style.css" type="text/css">
+
+</head>
+
+<body class="{{ page.bodyclass }}">
+<a href="#main" class="audible">Skip to main content</a>
+  <header id="banner" role="banner">
+    <p><a href="/">{{ site.title }}</a> <!--fill in what the hell this thing is about --> {{ site.author }}.</p>
+      </p>
+  </header>
+  <main id="main" role="main">
+    {{ content }}
+  </main>
+</body>
+</html>
+

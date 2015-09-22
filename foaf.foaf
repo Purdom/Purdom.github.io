@@ -1,0 +1,16 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+<uri:purdom> a foaf:Person ;
+  foaf:plan "A pithy string" ;
+  foaf:familyName "Lindblad";
+  foaf:firstName "Purdom" ;
+  foaf:img <http://1.gravatar.com/avatar/793efa9d0184bfd15d3c72bac0b6cf8c> ;
+
+  foaf:account [
+    a foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <http://www.twitter.com/> ;
+    foaf:accountName "Purdom_L"
+  ];
+
+  foaf:homepage <http://purdom.github.io/> .
