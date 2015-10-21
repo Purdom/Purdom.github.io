@@ -3,13 +3,21 @@ layout: default
 bodyclass: 'home'
 ---
 <section id="photos">
-  {% for post in site.categories.photo offset: 0 limit: 5 %}
-      <a rel="permalink" href="{{ post.url }}">{{ post.title }}<img src="/images/{{ post.image }}" alt=""></a>
+    <h1>Photos</h1>
+    {% for post in site.categories.photo limit: 5 %}
+    <a rel="permalink" href="{{ post.url }}">{{ post.title }}<img src="/images/{{ post.image }}" alt=""></a>
+ {% endfor %}
+</section>
+
+<section id="books">
+    <h1>Book Project</h1>
+  {% for post in site.categories.book limit: 5 %}
+      <a rel="permalink" href="{{ post.url }}">{{ post.title }}</a>
  {% endfor %}
 </section>
 
 <ul class="posts">
-    {% for post in site.posts offset: 0 limit: 5 %}
+    {% for post in site.posts limit: 5 %}
         <li>
             <span class="eyebrow" aria-hidden="true">{{ post.category }}</span>
             <a rel="permalink" href="{{ post.url }}">{{ post.title }}</a>
