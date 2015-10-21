@@ -2,6 +2,12 @@
 layout: default
 bodyclass: 'home'
 ---
+<section id="photos">
+  {% for post in site.categories.photo offset: 0 limit: 5 %}
+      <a rel="permalink" href="{{ post.url }}">{{ post.title }}<img src="/images/{{ post.image }}" alt=""></a>
+ {% endfor %}
+</section>
+
 <ul class="posts">
     {% for post in site.posts offset: 0 limit: 5 %}
         <li>
