@@ -69,6 +69,7 @@ img {
     align-content: flex-start;
     justify-content: flex-start;
     line-height:0;
+
     div {
         width: 33.3%;
         position:relative;
@@ -85,6 +86,7 @@ img {
             position:absolute;
             left:0px;
             right:0px;
+            bottom:0;
             color: #fff;
             padding: 10px;
             background: rgba(0,0,0,0.75);

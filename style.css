@@ -73,6 +73,7 @@
     position: absolute;
     left: 0px;
     right: 0px;
+    bottom: 0;
     color: #fff;
     padding: 10px;
     background: rgba(0, 0, 0, 0.75);
