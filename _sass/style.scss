@@ -37,6 +37,24 @@ body {
   margin-right: auto;
 }
 
+a {
+
+ &:link {
+   color: #545448;
+ }
+ &:visited {
+   color: lighten(#545448, 20%);
+ }
+ &:hover, &:focus {
+   color: darken(#D4D074, 20%);
+
+ }
+ &:active {
+   color: darken(#545448, 10%);
+ }
+
+}
+
 img {
     max-width:100%;
     width: auto;
@@ -64,24 +82,16 @@ img {
 }
 
 #photos {
-    @include display-flex;
-    @include flex-flow(row wrap);
-    height: 60vw;
-    align-content: flex-start;
-    justify-content: flex-start;
-    line-height:0;
 
     div {
-        width: 33.3%;
         position:relative;
-        display:inline-block;
+        width: 33%;
+        line-height:0;
     }
+
 
     a {
         transition: .4s opacity;
-        margin:0;
-        padding:0;
-        line-height:0;
 
         span {
             position:absolute;
@@ -98,6 +108,11 @@ img {
 
     &:hover a { opacity: 0.5; }
     &:hover a:hover { opacity: 1; }
+}
+
+#contentinfo {
+  text-align:center;
+  border-top: 1px solid rgba(#B7CDCC, 0.6);
 }
 
 .social {
