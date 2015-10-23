@@ -1,5 +1,6 @@
 @import "compass";
 @import "susy";
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 @include font-face(
     "Valentina Regular",
@@ -97,6 +98,30 @@ img {
 
     &:hover a { opacity: 0.5; }
     &:hover a:hover { opacity: 1; }
+}
+
+.social {
+    list-style:none;
+    margin:0;
+    padding:0;
+    margin-top: rhythm(1,16px);
+
+    li {
+        display:inline-block;
+    }
+
+    span {
+        @extend .audible;
+    }
+
+    i {
+        @include adjust-font-size-to(28px);
+        @include adjust-leading-to(2,28px);
+        width:rhythm(2,28px);
+        height:rhythm(2,28px);
+        @include border-radius(50%);
+    }
+
 }
 
 }
