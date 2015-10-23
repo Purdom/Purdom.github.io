@@ -3,22 +3,26 @@ layout: default
 bodyclass: 'home'
 ---
 <section id="photos">
-    {% for post in site.categories.photo limit: 5 %}
+    {% for post in site.categories.photo limit: 6 %}
     <div><a rel="permalink" href="{{ post.url }}"><span>{{ post.title }}</span><img src="/images/{{ post.image }}" alt=""></a></div>
  {% endfor %}
 </section>
 
 <section id="books">
-    <h1>Geneology of Books Project</h1>
-  {% for post in site.categories.book limit: 5 %}
-  <a rel="permalink" href="{{ post.url }}"><span>{{ post.title }}</span></a>
- {% endfor %}
+  <h1>Geneology of Books Project</h1>
+  <ul class="books">
+    {% for post in site.categories.book limit: 5 %}
+      <li>
+    <a rel="permalink" href="{{ post.url }}"><span>{{ post.title }}</span></a>
+      </li>
+{% endfor %}
+  </ul>
 </section>
 
 <section id="posts">
   <h1>Blog Posts</h1>
 <ul class="posts">
-    {% for post in site.posts limit: 5 %}
+    {% for post in site.categories.blog limit: 5 %}
         <li>
             <span class="eyebrow" aria-hidden="true">{{ post.category }}</span>
             <a rel="permalink" href="{{ post.url }}">{{ post.title }}</a>

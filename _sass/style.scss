@@ -100,6 +100,11 @@ img {
     font-size: 60px;
     display: block;
     text-decoration: none;
+    i {
+      letter-spacing: 6px;
+      color: lighten(#545448, 30%);
+
+    }
   }
   em {
     font-family:"Universum";
@@ -144,7 +149,8 @@ img {
             bottom:0;
             color: #fff;
             padding: 10px;
-            background: rgba(0,0,0,0.75);
+            background-color: lighten(#545448, 20%);
+            font-family: "Universum";
             line-height:1em;
         }
 

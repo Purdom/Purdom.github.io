@@ -80,6 +80,10 @@
     display: block;
     text-decoration: none;
   }
+  #banner p a i {
+    letter-spacing: 6px;
+    color: #a2a293;
+  }
   #banner em {
     font-family: "Universum";
     font-style: normal;
@@ -114,7 +118,8 @@
     bottom: 0;
     color: #fff;
     padding: 10px;
-    background: rgba(0, 0, 0, 0.75);
+    background-color: #8b8b77;
+    font-family: "Universum";
     line-height: 1em;
   }
   #photos:hover a {

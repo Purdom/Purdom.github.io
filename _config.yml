@@ -5,6 +5,6 @@ highlighter:  pygments
 exclude: ['readme.md', 'Procfile', 'config.rb', '.gitignore', '.sass-cache', 'Gemfile', 'Gemfile.lock']
 show_drafts: false
 
-title: Compost
+title: Com<i>·</i>post
 author: Purdom Lindblad
 domain: http://purdom.org
