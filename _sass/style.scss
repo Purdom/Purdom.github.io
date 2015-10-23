@@ -55,6 +55,11 @@ a {
 
 }
 
+h1 {
+  -webkits-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+}
+
 img {
     max-width:100%;
     width: auto;
@@ -72,6 +77,27 @@ img {
     width: 1px;
 }
 
+#banner {
+ @include display-flex;
+ @include align-items(flex-end);
+ @include justify-content(space-between);
+ border-bottom: 1px solid rgba(#B7CDCC, 0.6);
+ margin-bottom: 1em;
+  p a {
+    font-size: 60px;
+    display: block;
+  }
+
+}
+
+#globalnav {
+  ul {
+    list-style: none;
+    text-align: right;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  }
 
 #contact {
   background: #B1BFBF;

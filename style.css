@@ -38,6 +38,11 @@
     color: #393930;
   }
 
+  h1 {
+    -webkits-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+  }
+
   img {
     max-width: 100%;
     width: auto;
@@ -53,6 +58,28 @@
     padding: 0;
     position: absolute;
     width: 1px;
+  }
+
+  #banner {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(183, 205, 204, 0.6);
+    margin-bottom: 1em;
+  }
+  #banner p a {
+    font-size: 60px;
+    display: block;
+  }
+
+  #globalnav ul {
+    list-style: none;
+    text-align: right;
+    margin-left: 0;
+    padding-left: 0;
   }
 
   #contact {
