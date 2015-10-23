@@ -14,6 +14,19 @@
     "valentina-regular-webfont.eot"
 );
 
+@include font-face(
+    "Universum",
+    font-files(
+        "universum-webfont.woff2",
+        "universum-webfont.woff",
+        "universum-webfont.ttf",
+        "universum-webfont.otf",
+        "universum-webfont.svg#universum"
+    ),
+    "universum-webfont.eot"
+);
+
+
 @media screen {
 
 
@@ -86,7 +99,12 @@ img {
   p a {
     font-size: 60px;
     display: block;
+    text-decoration: none;
   }
+  em {
+    font-family:"Universum";
+    font-style: normal;
+      }
 
 }
 
