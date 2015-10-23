@@ -82,24 +82,16 @@ img {
 }
 
 #photos {
-    @include display-flex;
-    @include flex-flow(row wrap);
-    height: 60vw;
-    align-content: flex-start;
-    justify-content: flex-start;
-    line-height:0;
 
     div {
-        width: 33.3%;
         position:relative;
-        display:inline-block;
+        width: 33%;
+        line-height:0;
     }
+
 
     a {
         transition: .4s opacity;
-        margin:0;
-        padding:0;
-        line-height:0;
 
         span {
             position:absolute;

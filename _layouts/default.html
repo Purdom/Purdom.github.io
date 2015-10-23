@@ -21,6 +21,8 @@
   <link href='http://fonts.googleapis.com/css?family=Lusitana:400,700|Source+Sans+Pro' rel='stylesheet' type='text/css'><!-- this is the font Jeremy's using, change it! -->
   <link rel="stylesheet" href="/style.css" type="text/css">
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
 </head>
 
 <body class="{{ page.bodyclass }}">
@@ -31,7 +33,11 @@
       <ul>
         <li><a href="/about/">About</a></li>
         <li><a href="/books/">Books</a></li>
+<<<<<<< HEAD
         <li><a href="/photo/">Photos</a></li>
+=======
+        <li<a href="/photos/">Photos</a></li>
+>>>>>>> 9bf7fd69d852113d676d373c0b65a6895846126e
         <li><a href="/blog/">Blog</a></li>
         <li><a href="/colophon/">Colophon</a></li>
       </ul>
@@ -67,6 +73,12 @@
     All content released under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">CC-By 4.0 License</a>.</p>
   </footer>
 
+  <script>
+    var elem = document.querySelector('#photos');
+    var iso = new Isotope( elem, {
+      itemSelector: 'div'
+    });
+  </script>
 </body>
 </html>
 
