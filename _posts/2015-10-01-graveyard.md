@@ -1,6 +1,6 @@
 ---
-title: graveyard
+title: light
 layout: photo
 categories: photo
-image: blue.jpg
+image: light.jpg
 ---

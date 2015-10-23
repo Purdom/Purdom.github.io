@@ -64,8 +64,8 @@ img {
 
 #photos {
     @include display-flex;
-    @include flex-flow(column wrap);
-    height: 40vw;
+    @include flex-flow(row wrap);
+    height: 60vw;
     align-content: flex-start;
     justify-content: flex-start;
     line-height:0;

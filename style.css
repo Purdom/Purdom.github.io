@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Valentina Regular";
-  src: url('/fonts/valentina-regular-webfont.eot?1445380517');
-  src: url('/fonts/valentina-regular-webfont.eot?&1445380517#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445380517') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445380517') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445380517') format('truetype'), url('/fonts/valentina-regular-webfont.otf') format('opentype'), url('/fonts/valentina-regular-webfont.svg?1445380517#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?1445368412');
+  src: url('/fonts/valentina-regular-webfont.eot?&1445368412#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445368412') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445368412') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445368412') format('truetype'), url('/fonts/valentina-regular-webfont.otf') format('opentype'), url('/fonts/valentina-regular-webfont.svg?1445368412#valentinaregular') format('svg');
 }
 @media screen {
   html {
@@ -51,9 +51,9 @@
   #photos {
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
-    height: 40vw;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    height: 60vw;
     align-content: flex-start;
     justify-content: flex-start;
     line-height: 0;
