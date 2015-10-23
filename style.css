@@ -25,6 +25,19 @@
     margin-right: auto;
   }
 
+  a:link {
+    color: #545448;
+  }
+  a:visited {
+    color: #8b8b77;
+  }
+  a:hover, a:focus {
+    color: #ada835;
+  }
+  a:active {
+    color: #393930;
+  }
+
   img {
     max-width: 100%;
     width: auto;
@@ -85,6 +98,11 @@
   }
   #photos:hover a:hover {
     opacity: 1;
+  }
+
+  #contentinfo {
+    text-align: center;
+    border-top: 1px solid rgba(183, 205, 204, 0.6);
   }
 
   .social {
