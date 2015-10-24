@@ -2,12 +2,12 @@
 @font-face {
   font-family: "Valentina Regular";
   src: url('/fonts/valentina-regular-webfont.eot?1445645322');
-  src: url('/fonts/valentina-regular-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445645322') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445645322') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445645322') format('truetype'), url('/fonts/valentina-regular-webfont.otf') format('opentype'), url('/fonts/valentina-regular-webfont.svg?1445645322#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445645322') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445645322') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445645322') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1445645322#valentinaregular') format('svg');
 }
 @font-face {
   font-family: "Universum";
   src: url('/fonts/universum-webfont.eot?1445645322');
-  src: url('/fonts/universum-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445645322') format('woff2'), url('/fonts/universum-webfont.woff?1445645322') format('woff'), url('/fonts/universum-webfont.ttf?1445645322') format('truetype'), url('/fonts/universum-webfont.otf') format('opentype'), url('/fonts/universum-webfont.svg?1445645322#universum') format('svg');
+  src: url('/fonts/universum-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445645322') format('woff2'), url('/fonts/universum-webfont.woff?1445645322') format('woff'), url('/fonts/universum-webfont.ttf?1445645322') format('truetype'), url('/fonts/universum-webfont.svg?1445645322#universum') format('svg');
 }
 @media screen {
   html {
