@@ -17,8 +17,12 @@
   <!-- Style Sheets -->
   <link rel="stylesheet" href="/style.css" type="text/css">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
-
+  {% if page.url == '/index.html' or page.url == '/photos' %}
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.1.8/imagesloaded.pkgd.min.js"></script>
+  <script src="{{ site.url }}/javascripts/photos.js"></script>
+  {% endif %}
 </head>
 
 <body class="{{ page.bodyclass }}">
@@ -64,13 +68,6 @@
     <i class="fa fa-creative-commons"></i>
     All content released under a <a href="http://creativecommons.org/licenses/by/4.0/" rel="license">CC-By 4.0 License</a>.</p>
   </footer>
-
-  <script>
-    var elem = document.querySelector('#photos');
-    var iso = new Isotope( elem, {
-      itemSelector: 'div'
-    });
-  </script>
 </body>
 </html>
 
