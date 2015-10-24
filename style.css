@@ -1,17 +1,17 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @font-face {
   font-family: "Valentina Regular";
-  src: url('/fonts/valentina-regular-webfont.eot?1445368412');
-  src: url('/fonts/valentina-regular-webfont.eot?&1445368412#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445368412') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445368412') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445368412') format('truetype'), url('/fonts/valentina-regular-webfont.otf') format('opentype'), url('/fonts/valentina-regular-webfont.svg?1445368412#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?1445645322');
+  src: url('/fonts/valentina-regular-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445645322') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445645322') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445645322') format('truetype'), url('/fonts/valentina-regular-webfont.otf') format('opentype'), url('/fonts/valentina-regular-webfont.svg?1445645322#valentinaregular') format('svg');
 }
 @font-face {
   font-family: "Universum";
-  src: url('/fonts/universum-webfont.eot?1445625476');
-  src: url('/fonts/universum-webfont.eot?&1445625476#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445625476') format('woff2'), url('/fonts/universum-webfont.woff?1445625476') format('woff'), url('/fonts/universum-webfont.ttf?1445625476') format('truetype'), url('/fonts/universum-webfont.otf') format('opentype'), url('/fonts/universum-webfont.svg?1445625476#universum') format('svg');
+  src: url('/fonts/universum-webfont.eot?1445645322');
+  src: url('/fonts/universum-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445645322') format('woff2'), url('/fonts/universum-webfont.woff?1445645322') format('woff'), url('/fonts/universum-webfont.ttf?1445645322') format('truetype'), url('/fonts/universum-webfont.otf') format('opentype'), url('/fonts/universum-webfont.svg?1445645322#universum') format('svg');
 }
 @media screen {
   html {
-    background-image: url("images/pattern1.jpg");
+    background-image: url("images/background.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
