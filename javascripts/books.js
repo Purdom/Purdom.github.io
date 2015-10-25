@@ -5,23 +5,138 @@ $(function() {
         return "http://bibframe.org/vocab/" + thing;
     }
 
+    function purdom(thing) {
+        return "http://purdom.org/reading#" + thing;
+    }
+
+    function rdfs(thing) {
+        return "http://www.w3.org/2000/01/rdf-schema#" + thing;
+    }
+
+    var personType = bibframe("Person");
+    var workType   = bibframe("Work");
+    var creator    = bibframe("creator");
+    var leadTo     = purdom("lead_to");
+    var label      = rdfs("label");
+
+    function getTypeOf(obj) {
+        var type = obj["@type"];
+        return (type === undefined ? null : type[0]);
+    }
+
+    function getLabel(obj) {
+        var l = obj[label];
+        if (l === undefined || l === null) {
+            l = obj["@id"];
+            if (l === undefined || l === null) {
+                l = "unknown";
+            }
+            l = "<" + l + ">";
+        } else {
+            l = l[0]["@value"];
+        }
+        return l;
+    }
+
     function findType(typeName, triples) {
         return triples.filter(function(triple) {
-            var type = triple["@type"];
-            return (type !== undefined && type[0] == typeName);
+            return getTypeOf(triple) === typeName;
         });
     }
 
-    function findId(targetId, triples) {
-        var hits = triples.filter(function(triple) {
-            var id = triple["@id"];
-            return (id === targetId);
+    function indexById(triples) {
+        var index = {};
+        triples.forEach(function(obj) {
+            var id = obj["@id"];
+            index[id] = obj;
         });
-        return (hits.length > 0 ? hits[0] : null);
+        return index;
     }
 
-    function findLinksBetween(typeName, triples) {
+    function findLeadTo(triples) {
+        return triples.filter(function(obj) {
+            return (obj[leadTo] !== undefined);
+        });
+    }
 
+    function addPeopleSource(index, link) {
+        if (getTypeOf(link.link) === personType) {
+            link.source = link.link;
+        } else {
+            var source = (link.link[creator] || [])
+                .map(function(obj) {
+                    return index[obj["@id"]];
+                });
+            if (source.length === 0) {
+                link.source = null;
+            } else {
+                link.source = source[0];
+            }
+        }
+        return link;
+    }
+
+    function addPeopleTarget(index, link) {
+        var targets = link.link[leadTo]
+                .map(function(obj) {
+                    return index[obj["@id"]];
+                })
+                .map(function(obj) {
+                    var type = getTypeOf(obj);
+                    var person = null;
+                    if (type === personType) {
+                        person = obj;
+                    } else if (type === workType) {
+                        var c = obj[creator];
+                        if (c !== undefined && c !== null) {
+                            person = index[c[0]["@id"]];
+                        }
+                    }
+                    return person;
+                })
+            .filter(function(obj) { return obj !== null; })
+        ;
+        link.dest = targets;
+        return link;
+    }
+
+    function pushNode(nodeIndex, nodes, obj) {
+        var objId = obj["@id"];
+        if (nodeIndex[objId] === undefined) {
+            nodeIndex[objId] = nodes.length;
+            nodes.push({
+                id: objId,
+                label: getLabel(obj)
+            });
+        }
+    }
+
+    function buildPeopleGraph(people) {
+        var nodes     = [],
+            nodeIndex = {},
+            links     = [];
+
+        people.forEach(function(link) {
+            if (link.source !== null) {
+                pushNode(nodeIndex, nodes, link.source);
+            }
+            link.dest.forEach(function(dest) {
+                pushNode(nodeIndex, nodes, dest);
+            });
+        });
+        people.forEach(function(link) {
+            if (link.source !== null) {
+                var source = nodeIndex[link.source["@id"]];
+                link.dest.forEach(function(dest) {
+                    links.push({
+                        source: source,
+                        target: nodeIndex[dest["@id"]]
+                    });
+                });
+            }
+        });
+
+        return {nodes: nodes, links: links};
     }
 
     function graphPeople(divId, triples) {
@@ -35,17 +150,67 @@ $(function() {
         var svg = d3.select(divId).append("svg")
                 .attr("width", width)
                 .attr("height", height);
-        var people = findType(bibframe("Person"), triples);
+        var index = indexById(triples);
+        var people = findLeadTo(triples)
+                .map(function(obj) {
+                    // source :: Triple
+                    // link   :: Triple
+                    // dest   :: Array Triple
+                    return {source: null, link: obj, dest: null};
+                })
+                .map(function(obj) {
+                    return addPeopleSource(index, obj);
+                })
+                .map(function(obj) {
+                    return addPeopleTarget(index, obj);
+                })
+        ;
+        var graph = buildPeopleGraph(people);
 
+        forceDirected(svg, graph, width, height, color, force);
+
+    }
+
+    // TODO: How to make items that are only sources or only destinations?
+    // I.e., how to do you indicate direction?
+    function forceDirected(svg, graph, width, height, color, force) {
         force
-            .nodes(people)
-            .links(_)
+            .nodes(graph.nodes)
+            .links(graph.links)
             .start();
+        var link = svg.selectAll(".link")
+                .data(graph.links)
+                .enter().append("line")
+                .attr("class", "link")
+                .style("stroke-width", 3)
+        ;
+        var node = svg.selectAll(".node")
+                .data(graph.nodes)
+                .enter().append("circle")
+                .attr("class", "node")
+                .attr("r", 5)
+                .style("fill", function(d) { return color(1); })
+                .call(force.drag);
+        node.append("title")
+            .text(function(d) { return d.label; });
+
+        force.on("tick", function() {
+            link
+                .attr("x1", function(d) { return d.source.x; })
+                .attr("y1", function(d) { return d.source.y; })
+                .attr("x2", function(d) { return d.target.x; })
+                .attr("y2", function(d) { return d.target.y; })
+            ;
+            node
+                .attr("cx", function(d) { return d.x; })
+                .attr("cy", function(d) { return d.y; })
+            ;
+        });
     }
 
     window.bibframe = bibframe;
+    window.purdom   = purdom;
     window.findType = findType;
-    window.findId   = findId;
 
     $.getJSON('/posts.json', function(data) {
         window.triples = data;

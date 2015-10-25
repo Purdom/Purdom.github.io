@@ -255,3 +255,14 @@ h2, h3 {
  display:none;
 }
 }
+
+/* For the graphs on the books page. */
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
