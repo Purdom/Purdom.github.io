@@ -187,7 +187,7 @@ $(function() {
 
     function addBookSource(triples, link) {
         if (getTypeOf(link.link) == workType) {
-            link.source = link.link;
+            link.source = [link.link];
         } else {
             var source = [];
             triples.forEach(function(obj) {
@@ -227,6 +227,40 @@ $(function() {
         return link;
     }
 
+    function buildBookGraph(books) {
+        var nodes     = [],
+            nodeIndex = {},
+            links     = [];
+
+        console.log('building book graph', books);
+        books.forEach(function(link) {
+            if (link.source !== null) {
+                link.source.forEach(function(source) {
+                    pushNode(nodeIndex, nodes, source);
+                });
+            }
+            link.dest.forEach(function(dest) {
+                pushNode(nodeIndex, nodes, dest);
+            });
+        });
+        books.forEach(function(link) {
+            link.source.forEach(function(source) {
+                var i = nodeIndex[source["@id"]];
+                link.dest.forEach(function(dest) {
+                    var j = nodeIndex[dest["@id"]];
+                    nodes[i].sourceCount++;
+                    nodes[j].destCount++;
+                    links.push({
+                        source: i,
+                        target: j
+                    });
+                });
+            });
+        });
+
+        return {nodes: nodes, links: links};
+    }
+
     function graphBooks(divId, triples) {
         var width  = 960,
             height = 500;
@@ -249,8 +283,8 @@ $(function() {
                     return addBookTarget(index, triples, obj);
                 })
         ;
-        console.log(books);
-        var graph = buildPeopleGraph(books);
+        console.log('books', books);
+        var graph = buildBookGraph(books);
         var maxSourceCount = d3.max(graph.nodes, function(n) {
             return n.sourceCount;
         });
@@ -266,18 +300,10 @@ $(function() {
         );
     }
 
-    // TODO:
     function sourceDestColor(maxSource, maxDest, obj) {
-        // var base = hsl(204, 0.08, 0.23);
-        var saturation;
-        if (obj.sourceCount === 0) {
-            saturation = 0.0;
-        } else {
-            saturation = d3.max([0, (obj.sourceCount - obj.destCount)]) /
-                obj.sourceCount;
-                // (obj.destCount - obj.sourceCount) / (maxDest - maxSource);
-        }
-        // console.log(obj, saturation);
+        var saturation = 0.5 +
+                (obj.sourceCount / maxSource) -
+                (obj.destCount   / maxDest  );
         return d3.hsl(60, saturation, 0.4);
     }
 
