@@ -106,7 +106,9 @@ $(function() {
             nodeIndex[objId] = nodes.length;
             nodes.push({
                 id: objId,
-                label: getLabel(obj)
+                label: getLabel(obj),
+                sourceCount: 0,
+                destCount: 0
             });
         }
     }
@@ -125,12 +127,16 @@ $(function() {
             });
         });
         people.forEach(function(link) {
+            console.log(link);
             if (link.source !== null) {
-                var source = nodeIndex[link.source["@id"]];
+                var i = nodeIndex[link.source["@id"]];
                 link.dest.forEach(function(dest) {
+                    var j = nodeIndex[dest["@id"]];
+                    nodes[i].sourceCount++;
+                    nodes[j].destCount++;
                     links.push({
-                        source: source,
-                        target: nodeIndex[dest["@id"]]
+                        source: i,
+                        target: j
                     });
                 });
             }
@@ -166,9 +172,26 @@ $(function() {
                 })
         ;
         var graph = buildPeopleGraph(people);
+        var maxSourceCount = d3.max(graph.nodes, function(n) {
+            return n.sourceCount;
+        });
+        var maxDestCount = d3.max(graph.nodes, function(n) {
+            return n.destCount;
+        });
+        var colorF = function(obj) {
+            return sourceDestColor(color, maxSourceCount, maxDestCount, obj);
+        };
 
-        forceDirected($(divId), svg, graph, width, height, color, force);
+        forceDirected(
+            $(divId), svg, graph, width, height, colorF, force
+        );
+    }
 
+    function sourceDestColor(colorScale, maxSource, maxDest, obj) {
+        // var base = hsl(204, 0.08, 0.23);
+        var index = 10 * obj.sourceCount / maxSource +
+                10 * obj.destCount / maxDest;
+        return colorScale(index);
     }
 
     function forceDirected(parent, svg, graph, width, height, color, force) {
@@ -188,9 +211,14 @@ $(function() {
                 .enter().append("circle")
                 .attr("class", "node")
                 .attr("r", 15)
-                .style("fill", function(d) { return color(1); })
+                .style("fill", color)
                 .on('mouseover', function(obj) {
-                    $(".selected", parent).text(obj.label);
+                    console.log(obj);
+                    $(".selected", parent).text(
+                        "" + obj.destCount +
+                            " ❯ " + obj.label +
+                            " ❯ " + obj.sourceCount
+                    );
                 })
                 .call(force.drag);
         node.append("title")
