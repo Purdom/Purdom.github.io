@@ -167,13 +167,12 @@ $(function() {
         ;
         var graph = buildPeopleGraph(people);
 
-        forceDirected(svg, graph, width, height, color, force);
+        forceDirected($(divId), svg, graph, width, height, color, force);
 
     }
 
-    // TODO: How to make items that are only sources or only destinations?
-    // I.e., how to do you indicate direction?
-    function forceDirected(svg, graph, width, height, color, force) {
+    function forceDirected(parent, svg, graph, width, height, color, force) {
+        window.people = svg;
         force
             .nodes(graph.nodes)
             .links(graph.links)
@@ -188,11 +187,15 @@ $(function() {
                 .data(graph.nodes)
                 .enter().append("circle")
                 .attr("class", "node")
-                .attr("r", 5)
+                .attr("r", 15)
                 .style("fill", function(d) { return color(1); })
+                .on('mouseover', function(obj) {
+                    $(".selected", parent).text(obj.label);
+                })
                 .call(force.drag);
         node.append("title")
-            .text(function(d) { return d.label; });
+            .text(function(d) { return d.label; })
+        ;
 
         force.on("tick", function() {
             link

@@ -230,3 +230,11 @@
   stroke: #999;
   stroke-opacity: .6;
 }
+
+#people .selected {
+  height: 25px;
+  width: 300px;
+  border: solid 1px;
+  border-color: #999;
+  padding-left: 3px;
+}
