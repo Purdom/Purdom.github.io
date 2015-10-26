@@ -6,5 +6,3 @@ author: Purdom Lindblad
 category: photo
 ---
 <img src="/images/{{ post.image }}" alt="">
-
-<p>Airport reading. Fantastically good.</p>
