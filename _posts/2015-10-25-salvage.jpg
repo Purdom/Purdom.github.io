@@ -1,8 +1,9 @@
- 1 ---
-  2 layout: photo
-  3 title: Salvage
-  4 image: /salvage.jpg
-  5 author: Purdom Lindblad
-  6 category: photo
-  7 ---
-  8 <img src="/images/{{ post.image }}" alt="">
+---
+layout: photo
+title: Salvage
+image: /salvage.jpg
+author: Purdom Lindblad
+category: photo
+  ---
+  <img src="/images/{{ post.image }}" alt="">
+<p>Airport reading. Fantastically good.</p>
