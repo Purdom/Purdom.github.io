@@ -1,0 +1,8 @@
+ 1 ---
+  2 layout: photo
+  3 title: Salvage
+  4 image: /salvage.jpg
+  5 author: Purdom Lindblad
+  6 category: photo
+  7 ---
+  8 <img src="/images/{{ post.image }}" alt="">
