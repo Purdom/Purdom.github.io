@@ -4,6 +4,7 @@ title: Salvage
 image: /salvage.jpg
 author: Purdom Lindblad
 category: photo
-  ---
-  <img src="/images/{{ post.image }}" alt="">
+---
+<img src="/images/{{ post.image }}" alt="">
+
 <p>Airport reading. Fantastically good.</p>
