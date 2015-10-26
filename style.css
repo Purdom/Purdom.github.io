@@ -231,7 +231,7 @@
   stroke-opacity: .6;
 }
 
-#people .selected {
+.selected {
   height: 25px;
   width: 300px;
   border: solid 1px;

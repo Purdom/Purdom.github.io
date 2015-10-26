@@ -127,7 +127,6 @@ $(function() {
             });
         });
         people.forEach(function(link) {
-            console.log(link);
             if (link.source !== null) {
                 var i = nodeIndex[link.source["@id"]];
                 link.dest.forEach(function(dest) {
@@ -148,7 +147,6 @@ $(function() {
     function graphPeople(divId, triples) {
         var width  = 960,
             height = 500;
-        var color = d3.scale.category20();
         var force = d3.layout.force()
                 .charge(-120)
                 .linkDistance(30)
@@ -179,7 +177,7 @@ $(function() {
             return n.destCount;
         });
         var colorF = function(obj) {
-            return sourceDestColor(color, maxSourceCount, maxDestCount, obj);
+            return sourceDestColor(maxSourceCount, maxDestCount, obj);
         };
 
         forceDirected(
@@ -187,15 +185,103 @@ $(function() {
         );
     }
 
-    function sourceDestColor(colorScale, maxSource, maxDest, obj) {
+    function addBookSource(triples, link) {
+        if (getTypeOf(link.link) == workType) {
+            link.source = link.link;
+        } else {
+            var source = [];
+            triples.forEach(function(obj) {
+                var c      = obj[creator],
+                    linkId = link.link["@id"];
+                if (c !== undefined && c[0]["@id"] === linkId) {
+                    source.push(obj);
+                }
+            });
+            link.source = source;
+        }
+        return link;
+    }
+
+    function addBookTarget(index, triples, link) {
+        var targets = [];
+        link.link[leadTo]
+            .map(function(obj) {
+                return index[obj["@id"]];
+            })
+            .forEach(function(obj) {
+                var type = getTypeOf(obj);
+                if (type == workType) {
+                    targets.push(obj);
+                } else {
+                    var linkId = obj["@id"];
+                    triples.forEach(function(t) {
+                        var c = t[creator];
+                        if (c !== undefined && c[0]["@id"] === linkId) {
+                            targets.push(t);
+                        }
+                    });
+                }
+            })
+        ;
+        link.dest = targets;
+        return link;
+    }
+
+    function graphBooks(divId, triples) {
+        var width  = 960,
+            height = 500;
+        var force = d3.layout.force()
+                .charge(-120)
+                .linkDistance(30)
+                .size([width, height]);
+        var svg = d3.select(divId).append("svg")
+                .attr("width", width)
+                .attr("height", height);
+        var index = indexById(triples);
+        var books = findLeadTo(triples)
+                .map(function(obj) {
+                    return {source: null, link: obj, dest: null};
+                })
+                .map(function(obj) {
+                    return addBookSource(triples, obj);
+                })
+                .map(function(obj) {
+                    return addBookTarget(index, triples, obj);
+                })
+        ;
+        console.log(books);
+        var graph = buildPeopleGraph(books);
+        var maxSourceCount = d3.max(graph.nodes, function(n) {
+            return n.sourceCount;
+        });
+        var maxDestCount = d3.max(graph.nodes, function(n) {
+            return n.destCount;
+        });
+        var colorF = function(obj) {
+            return sourceDestColor(maxSourceCount, maxDestCount, obj);
+        };
+
+        forceDirected(
+            $(divId), svg, graph, width, height, colorF, force
+        );
+    }
+
+    // TODO:
+    function sourceDestColor(maxSource, maxDest, obj) {
         // var base = hsl(204, 0.08, 0.23);
-        var index = 10 * obj.sourceCount / maxSource +
-                10 * obj.destCount / maxDest;
-        return colorScale(index);
+        var saturation;
+        if (obj.sourceCount === 0) {
+            saturation = 0.0;
+        } else {
+            saturation = d3.max([0, (obj.sourceCount - obj.destCount)]) /
+                obj.sourceCount;
+                // (obj.destCount - obj.sourceCount) / (maxDest - maxSource);
+        }
+        // console.log(obj, saturation);
+        return d3.hsl(60, saturation, 0.4);
     }
 
     function forceDirected(parent, svg, graph, width, height, color, force) {
-        window.people = svg;
         force
             .nodes(graph.nodes)
             .links(graph.links)
@@ -251,6 +337,7 @@ $(function() {
             } else {
                 window.expanded = expanded;
                 graphPeople("#people", expanded);
+                graphBooks("#books", expanded);
             }
         });
     });
