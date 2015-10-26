@@ -232,7 +232,6 @@ $(function() {
             nodeIndex = {},
             links     = [];
 
-        console.log('building book graph', books);
         books.forEach(function(link) {
             if (link.source !== null) {
                 link.source.forEach(function(source) {
@@ -283,7 +282,6 @@ $(function() {
                     return addBookTarget(index, triples, obj);
                 })
         ;
-        console.log('books', books);
         var graph = buildBookGraph(books);
         var maxSourceCount = d3.max(graph.nodes, function(n) {
             return n.sourceCount;
@@ -325,7 +323,7 @@ $(function() {
                 .attr("r", 15)
                 .style("fill", color)
                 .on('mouseover', function(obj) {
-                    console.log(obj);
+                    // console.log(obj);
                     $(".selected", parent).text(
                         "" + obj.destCount +
                             " ❯ " + obj.label +
