@@ -1,8 +1,0 @@
----
-layout: photo
-title: Salvage
-image: /salvage.jpg
-author: Purdom Lindblad
-category: photo
----
-<img src="/images/{{ post.image }}" alt="">
