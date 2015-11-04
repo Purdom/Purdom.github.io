@@ -1,0 +1,14 @@
+desc "Build the Jekyll site."
+task :build do
+  sh %{jekyll build}
+end
+
+desc %{This deploys by using git subtree to push what's committed in the
+_site directory to the origin/master branch.}
+
+task :deploy => [:build] do
+  sh %{git add --all _site}
+  sh %{git commit -m "Deploying"}
+  sh %{git fetch origin}
+  sh %{git subtree }
+end

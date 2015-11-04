@@ -1,0 +1,242 @@
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+@font-face {
+  font-family: "Valentina Regular";
+  src: url('/fonts/valentina-regular-webfont.eot?1445610474');
+  src: url('/fonts/valentina-regular-webfont.eot?&1445610474#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445610474') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445610474') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445610474') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1445610474#valentinaregular') format('svg');
+}
+@font-face {
+  font-family: "Universum";
+  src: url('/fonts/universum-webfont.eot?1445626260');
+  src: url('/fonts/universum-webfont.eot?&1445626260#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445626260') format('woff2'), url('/fonts/universum-webfont.woff?1445626260') format('woff'), url('/fonts/universum-webfont.ttf?1445626260') format('truetype'), url('/fonts/universum-webfont.svg?1445626260#universum') format('svg');
+}
+@media screen {
+  html {
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 300px;
+  }
+
+  body {
+    font-family: 'Valentina Regular';
+    color: #363C40;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    width: 70%;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  a:link {
+    color: #545448;
+  }
+  a:visited {
+    color: #8b8b77;
+  }
+  a:hover, a:focus {
+    color: #ada835;
+  }
+  a:active {
+    color: #393930;
+  }
+
+  h1 {
+    -webkits-font-variant-ligatures: common-ligatures;
+    font-variant-ligatures: common-ligatures;
+  }
+
+  img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+  }
+
+  .audible, .social span {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+
+  #banner {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(183, 205, 204, 0.6);
+    margin-bottom: 1em;
+  }
+  #banner p a {
+    font-size: 60px;
+    display: block;
+    text-decoration: none;
+  }
+  #banner p a i {
+    letter-spacing: 6px;
+    color: #a2a293;
+  }
+  #banner em {
+    font-family: "Universum";
+    font-style: normal;
+  }
+
+  #globalnav ul {
+    list-style: none;
+    text-align: right;
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  #contact {
+    background: #B1BFBF;
+    border-top: 1px solid #B1BFBF;
+    border-bottom: 1px solid #B1BFBF;
+    width: 100%;
+  }
+
+  #photos div {
+    position: relative;
+    width: 33%;
+    line-height: 0;
+  }
+  #photos a {
+    transition: .4s opacity;
+  }
+  #photos a span {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    color: #fff;
+    padding: 10px;
+    background-color: #8b8b77;
+    font-family: "Universum";
+    line-height: 1em;
+  }
+  #photos:hover a {
+    opacity: 0.5;
+  }
+  #photos:hover a:hover {
+    opacity: 1;
+  }
+
+  #contentinfo {
+    text-align: center;
+    border-top: 1px solid rgba(183, 205, 204, 0.6);
+  }
+
+  .social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 1.5em;
+  }
+  .social li {
+    display: inline-block;
+  }
+  .social i {
+    font-size: 1.75em;
+    line-height: 1.71429em;
+    line-height: 1.71429em;
+    width: 1.71429em;
+    height: 1.71429em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+}
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* h5bp.com/t */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  #banner {
+    display: none;
+  }
+}
+/* For the graphs on the books page. */
+.node {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.link {
+  stroke: #999;
+  stroke-opacity: .6;
+}
+
+.selected {
+  height: 25px;
+  width: 300px;
+  border: solid 1px;
+  background: #545448;
+  opacity: .6;
+  color: #eee;
+  padding-left: 3px;
+}
