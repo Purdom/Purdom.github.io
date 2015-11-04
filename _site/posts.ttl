@@ -1,0 +1,172 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<> rdfa:usesVocabulary <http://bibframe.org/vocab/> .
+
+<http://dbpedia.org/resource/Robert_Fagles> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Robert Fagles" .
+
+<http://uva.worldcat.org/oclc/20825683> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Illiad";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Homer> .
+
+<http://uva.worldcat.org/oclc/251203637> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The City and the City";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/41875812> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "King Rat";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/436030063> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Kraken: an anatomy";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/45532466> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Perdido Street Station";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/55019061> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Iron Council";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/659766009> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Embassy Town";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/747527888> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Railsea";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://uva.worldcat.org/oclc/772530906> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Book on Fire";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Keith_Miller>;
+   <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/756582258>,
+     <http://uva.worldcat.org/oclc/47696637>,
+     <http://uva.worldcat.org/oclc/18163210>,
+     <http://uva.worldcat.org/oclc/232129602> .
+
+<http://uva.worldcat.org/oclc/818851874> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Odyssey";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Homer> .
+
+<http://uva.worldcat.org/oclc/892041303> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Histories";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Herodotus> .
+
+<http://uva.worldcat.org/oclc/907621819> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Three moments of an explosion";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
+
+<http://www.worldcat.org/oclc/885983017> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Republic of the Imagination";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Azar_Nafisi> .
+
+<http://dbpedia.org/resource/Azar_Nafisi> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Azar Nafisi";
+   <http://bibframe.org/vocab/referenced> <http://dbpedia.org/resource/Vladimir_Nabokov>,
+     <http://dbpedia.org/resource/James_Baldwin>,
+     <http://dbpedia.org/resource/C._S._Lewis>,
+     <http://dbpedia.org/resource/Jane_Austen>;
+   <http://purdom.org/reading#lead_to> <http://www.worldcat.org/oclc/7197128> .
+
+<http://dbpedia.org/resource/Bertrand_Russell> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Betrand Russell" .
+
+<http://dbpedia.org/resource/C._S._Lewis> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "CS Lewis" .
+
+<http://dbpedia.org/resource/Catherynne_M._Valente> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Catherynne Valente" .
+
+<http://dbpedia.org/resource/Herodotus> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Herodotus" .
+
+<http://dbpedia.org/resource/James_Baldwin> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "James Baldwin" .
+
+<http://dbpedia.org/resource/Jane_Austen> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Jane Austen" .
+
+<http://dbpedia.org/resource/Keith_Miller> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Keith Miller" .
+
+<http://dbpedia.org/resource/Milorad_Pavić> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Milorad Pavic" .
+
+<http://dbpedia.org/resource/Sofia_Samatar> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Sofia Samatar" .
+
+<http://dbpedia.org/resource/Vladimir_Nabokov> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Vladimir Nabokov" .
+
+<http://uva.worldcat.org/oclc/18163210> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Dictionary of the Khazars: A Lexicon Novel (female edition)" .
+
+<http://uva.worldcat.org/oclc/232129602> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Palimpsest";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Catherynne_M._Valente> .
+
+<http://uva.worldcat.org/oclc/3380425> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Invisible Cities";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Italo_Calvino> .
+
+<http://uva.worldcat.org/oclc/38168295> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "My Year of Meats";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki> .
+
+<http://uva.worldcat.org/oclc/43622691> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "What I Believe";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Bertrand_Russell> .
+
+<http://uva.worldcat.org/oclc/47696637> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Last Love in Constantinople: A Tarot novel for divination";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Milorad_Pavić> .
+
+<http://uva.worldcat.org/oclc/48892404> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Kamikaze, Cherry Blossoms, and Nationalisms";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Emiko_Ohnuki-Tierney> .
+
+<http://uva.worldcat.org/oclc/51832503> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "All Over Creation";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki> .
+
+<http://uva.worldcat.org/oclc/62533869> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Kamikaze Diaries";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Emiko_Ohnuki-Tierney> .
+
+<http://uva.worldcat.org/oclc/756582258> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "A Stranger in Olondria";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Sofia_Samatar> .
+
+<http://uva.worldcat.org/oclc/796756004> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Tale for the Timebeing";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki>;
+   <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/51832503>,
+     <http://uva.worldcat.org/oclc/38168295>,
+     <http://uva.worldcat.org/oclc/48892404>,
+     <http://uva.worldcat.org/oclc/62533869>,
+     <http://uva.worldcat.org/oclc/43622691> .
+
+<http://www.worldcat.org/oclc/7197128> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "If On A Winter's Night A Traveler";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Italo_Calvino>;
+   <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/3380425> .
+
+<http://dbpedia.org/resource/Emiko_Ohnuki-Tierney> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Emiko Ohnuki-Tierney" .
+
+<http://dbpedia.org/resource/Homer> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Homer" .
+
+<http://dbpedia.org/resource/Italo_Calvino> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Italo Calvino";
+   <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/796756004> .
+
+<http://dbpedia.org/resouce/Ruth_Ozeki> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Ruth Ozeki" .
+
+<http://dbpedia.org/resource/China_Mi%C3%A9ville> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "China Mieville" .
