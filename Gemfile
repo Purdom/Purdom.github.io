@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-gem "jekyll"
+gem "jekyll", "< 3.0"
 gem "foreman"
 gem "susy"
 gem "compass", "~> 1.0.0.rc.1"
