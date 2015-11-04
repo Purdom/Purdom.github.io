@@ -52,7 +52,11 @@ GEM
       coffee-script (~> 2.2)
     jekyll-gist (1.3.5)
     jekyll-paginate (1.1.0)
-    jekyll-rdfa (0.0.0)
+    jekyll-rdfa (0.0.2)
+      jekyll (~> 2.5)
+      json-ld (~> 1.1)
+      rdf (~> 1.1)
+      rdf-rdfa (~> 1.1)
     jekyll-sass-converter (1.3.0)
       sass (~> 3.2)
     jekyll-watch (1.3.0)
@@ -118,6 +122,3 @@ DEPENDENCIES
   rdf-rdfa
   rdf-turtle
   susy
-
-BUNDLED WITH
-   1.10.6
