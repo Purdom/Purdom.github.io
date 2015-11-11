@@ -6,14 +6,6 @@ permalink: /books/
 
 <p>The Geneology of Books linked open data project with Eric Rochester.</p>
 
- <ul class="books">
-    {% for post in site.categories.book %}
-      <li>
-    <a rel="permalink" href="{{ post.url }}"><span>{{ post.title }}</span></a>
-      </li>
-{% endfor %}
-  </ul>
-
   <div id="people">
       <div class="selected"></div>
   </div>
@@ -28,3 +20,11 @@ permalink: /books/
 <script src="/javascripts/jsonld.js"></script>
 <script src="/javascripts/Bacon.min.js"></script>
 <script src="/javascripts/books.js"></script>
+
+ <ul class="books">
+    {% for post in site.categories.book %}
+      <li>
+    <a rel="permalink" href="{{ post.url }}"><span>{{ post.title }}</span></a>
+      </li>
+{% endfor %}
+  </ul>
