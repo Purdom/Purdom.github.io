@@ -29,7 +29,7 @@
 
 
 html {
-  background-image: url('images/background.jpg');
+  background-image: url('images/summer4.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat:no-repeat;
@@ -40,7 +40,7 @@ html {
 body {
   font-family: 'Valentina Regular';
   color: #363C40;
-  background-color: rgba(255, 255, 255, .5);
+  background-color: rgba(#E4F3D4, .5);
   padding: 50px;
   width: 70%;
   margin-top: 0;
@@ -51,17 +51,17 @@ body {
 a {
 
  &:link {
-   color: #545448;
+   color: #8A4A41;
  }
  &:visited {
-   color: lighten(#545448, 20%);
+   color: lighten(#8A4A41, 20%);
  }
  &:hover, &:focus {
-   color: darken(#D4D074, 20%);
+   color: darken(#CCCDB5, 10%);
 
  }
  &:active {
-   color: darken(#545448, 10%);
+   color: darken(#825558, 10%);
  }
 
 }

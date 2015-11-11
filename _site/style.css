@@ -1,17 +1,17 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @font-face {
   font-family: "Valentina Regular";
-  src: url('/fonts/valentina-regular-webfont.eot?1445610474');
-  src: url('/fonts/valentina-regular-webfont.eot?&1445610474#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445610474') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445610474') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445610474') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1445610474#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?1445368412');
+  src: url('/fonts/valentina-regular-webfont.eot?&1445368412#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445368412') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445368412') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445368412') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1445368412#valentinaregular') format('svg');
 }
 @font-face {
   font-family: "Universum";
-  src: url('/fonts/universum-webfont.eot?1445626260');
-  src: url('/fonts/universum-webfont.eot?&1445626260#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445626260') format('woff2'), url('/fonts/universum-webfont.woff?1445626260') format('woff'), url('/fonts/universum-webfont.ttf?1445626260') format('truetype'), url('/fonts/universum-webfont.svg?1445626260#universum') format('svg');
+  src: url('/fonts/universum-webfont.eot?1445625476');
+  src: url('/fonts/universum-webfont.eot?&1445625476#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445625476') format('woff2'), url('/fonts/universum-webfont.woff?1445625476') format('woff'), url('/fonts/universum-webfont.ttf?1445625476') format('truetype'), url('/fonts/universum-webfont.svg?1445625476#universum') format('svg');
 }
 @media screen {
   html {
-    background-image: url("images/background.jpg");
+    background-image: url("images/summer4.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@
   body {
     font-family: 'Valentina Regular';
     color: #363C40;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(228, 243, 212, 0.5);
     padding: 50px;
     width: 70%;
     margin-top: 0;
@@ -31,16 +31,16 @@
   }
 
   a:link {
-    color: #545448;
+    color: #8A4A41;
   }
   a:visited {
-    color: #8b8b77;
+    color: #bd7d74;
   }
   a:hover, a:focus {
-    color: #ada835;
+    color: #b7b897;
   }
   a:active {
-    color: #393930;
+    color: #634143;
   }
 
   h1 {
