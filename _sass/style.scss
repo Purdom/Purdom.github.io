@@ -29,7 +29,7 @@
 
 
 html {
-  background-image: url('images/summer4.jpg');
+  background-image: url('images/n4.jpg');
   background-size: cover;
   background-position: bottom center;
   background-repeat:no-repeat;
@@ -39,8 +39,8 @@ html {
 
 body {
   font-family: 'Valentina Regular';
-  color: #363C40;
-  background-color: rgba(#E4F3D4, .5);
+  color: darken(#26464F,20%);
+  background-color: rgba(#F0DED4, .6);
   padding: 50px;
   width: 70%;
   margin-top: 0;
@@ -49,19 +49,18 @@ body {
 }
 
 a {
-
  &:link {
-   color: #8A4A41;
- }
+   color: lighten(#26464F, 5%);
+    }
  &:visited {
-   color: lighten(#8A4A41, 20%);
+   color: darken(#26464F, 5%);
  }
  &:hover, &:focus {
-   color: darken(#CCCDB5, 10%);
+   color: darken(#C097B5, 35%);
 
  }
  &:active {
-   color: darken(#825558, 10%);
+   color: darken(#AF9A7B, 35%);
  }
 
 }
@@ -100,13 +99,13 @@ img {
     text-decoration: none;
     i {
       letter-spacing: 6px;
-      color: lighten(#545448, 30%);
+      color: lighten(#26464F, 30%);
 
     }
   }
   em {
     font-family:"Universum";
-    font-style: normal;
+    font-style: oblique;
       }
 
 }
@@ -121,9 +120,9 @@ img {
   }
 
 #contact {
-  background: #B1BFBF;
-  border-top: 1px solid #B1BFBF;
-  border-bottom:  1px solid #B1BFBF;
+  background: #26464F;
+  border-top: 1px solid #26464F;
+  border-bottom:  1px solid #26464F;
   width: 100%;
 
 }
@@ -147,7 +146,7 @@ img {
             bottom:0;
             color: #fff;
             padding: 10px;
-            background-color: lighten(#545448, 20%);
+            background-color: #26464F;
             font-family: "Universum";
             line-height:1em;
         }
@@ -160,7 +159,7 @@ img {
 
 #contentinfo {
   text-align:center;
-  border-top: 1px solid rgba(#B7CDCC, 0.6);
+  border-top: 1px solid rgba(#26464F, 0.6);
 }
 
 .social {
