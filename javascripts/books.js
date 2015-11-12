@@ -13,12 +13,20 @@ $(function() {
         return "http://www.w3.org/2000/01/rdf-schema#" + thing;
     }
 
-    var personType = bibframe("Person");
-    var workType   = bibframe("Work");
-    var creator    = bibframe("creator");
-    var leadTo     = purdom("lead_to");
-    var label      = rdfs("label");
-
+    var personType    = bibframe("Person");
+    var workType      = bibframe("Work");
+    var creator       = bibframe("creator");
+    var leadTo        = purdom("lead_to");
+    var label         = rdfs("label");
+    var charge        = -400;
+    var linkDistance  = 100;
+    var width         = 700;
+    var height        = 500;
+    var hue           = 193;
+    var light         = .35;
+    var radius        = 25;
+    var strokeWidth   = 3;
+ 
     function getTypeOf(obj) {
         var type = obj["@type"];
         return (type === undefined ? null : type[0]);
@@ -145,11 +153,9 @@ $(function() {
     }
 
     function graphPeople(divId, triples) {
-        var width  = 960,
-            height = 500;
         var force = d3.layout.force()
-                .charge(-120)
-                .linkDistance(30)
+                .charge(charge)
+                .linkDistance(linkDistance)
                 .size([width, height]);
         var svg = d3.select(divId).append("svg")
                 .attr("width", width)
@@ -261,11 +267,9 @@ $(function() {
     }
 
     function graphBooks(divId, triples) {
-        var width  = 960,
-            height = 500;
         var force = d3.layout.force()
-                .charge(-120)
-                .linkDistance(30)
+                .charge(charge)
+                .linkDistance(linkDistance)
                 .size([width, height]);
         var svg = d3.select(divId).append("svg")
                 .attr("width", width)
@@ -302,7 +306,7 @@ $(function() {
         var saturation = 0.5 +
                 (obj.sourceCount / maxSource) -
                 (obj.destCount   / maxDest  );
-        return d3.hsl(60, saturation, 0.4);
+        return d3.hsl(hue, saturation, light);
     }
 
     function forceDirected(parent, svg, graph, width, height, color, force) {
@@ -314,13 +318,13 @@ $(function() {
                 .data(graph.links)
                 .enter().append("line")
                 .attr("class", "link")
-                .style("stroke-width", 3)
+                .style("stroke-width", strokeWidth)
         ;
         var node = svg.selectAll(".node")
                 .data(graph.nodes)
                 .enter().append("circle")
                 .attr("class", "node")
-                .attr("r", 15)
+                .attr("r", radius)
                 .style("fill", color)
                 .on('mouseover', function(obj) {
                     // console.log(obj);
