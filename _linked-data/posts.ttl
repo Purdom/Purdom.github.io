@@ -60,6 +60,13 @@
    rdfs:label "Three moments of an explosion";
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
 
+<http://www.worldcat.org/oclc/46393953> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "American Gods";
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Neil_Gaiman>;
+   <http://purdom.org/reading#start_date> "2015-11-09"^^xsd:date;
+   <http://purdom.org/reading#theme_of> <http://purdom.org/tag#imprisonment>,
+     <http://purdom.org/tag#deity_lifecycle> .
+
 <http://www.worldcat.org/oclc/885983017> a <http://bibframe.org/vocab/Work>;
    rdfs:label "The Republic of the Imagination";
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Azar_Nafisi> .
@@ -95,6 +102,9 @@
 
 <http://dbpedia.org/resource/Milorad_Pavić> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Milorad Pavic" .
+
+<http://dbpedia.org/resource/Neil_Gaiman> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Neil Gaiman" .
 
 <http://dbpedia.org/resource/Sofia_Samatar> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Sofia Samatar" .

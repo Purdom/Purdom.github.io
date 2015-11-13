@@ -1,7 +1,8 @@
 {
   "@context": {
     "rdfa": "http://www.w3.org/ns/rdfa#",
-    "rdfs": "http://www.w3.org/2000/01/rdf-schema#"
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
     {
@@ -99,6 +100,11 @@
       "@id": "http://dbpedia.org/resource/Milorad_Pavić",
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": "Milorad Pavic"
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Neil_Gaiman",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": "Neil Gaiman"
     },
     {
       "@id": "http://dbpedia.org/resource/Robert_Fagles",
@@ -326,6 +332,26 @@
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
       "rdfs:label": "Three moments of an explosion"
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/46393953",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://dbpedia.org/resource/Neil_Gaiman"
+      },
+      "http://purdom.org/reading#start_date": {
+        "@value": "2015-11-09",
+        "@type": "xsd:date"
+      },
+      "http://purdom.org/reading#theme_of": [
+        {
+          "@id": "http://purdom.org/tag#imprisonment"
+        },
+        {
+          "@id": "http://purdom.org/tag#deity_lifecycle"
+        }
+      ],
+      "rdfs:label": "American Gods"
     },
     {
       "@id": "http://www.worldcat.org/oclc/7197128",
