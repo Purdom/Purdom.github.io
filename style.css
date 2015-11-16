@@ -16,7 +16,7 @@
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 300px;
+    padding-bottom: auto;
   }
 
   body {
@@ -28,7 +28,7 @@
     -webkit-font-feature-settings: "dlig";
     font-feature-settings: "dlig";
     color: #05090a;
-    background-color: rgba(240, 222, 212, 0.4);
+    background-color: rgba(255, 236, 225, 0.4);
     padding: 50px;
     width: 100%;
     margin-top: 0;
