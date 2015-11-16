@@ -50,7 +50,7 @@ body {
 
   a:link {
     color: darken(#26464F, 20%);
-    @include font-feature-settings(dlig);
+    @include font-feature-settings(dlig swsh salt);
   }
   a:visited {
     color: darken(#526368, 10%)
@@ -81,6 +81,7 @@ img {
 }
 
 #banner {
+ @include font-feature-settings(dlig); 
  @include display-flex;
  @include align-items(flex-end);
  @include justify-content(space-between);
@@ -104,6 +105,8 @@ img {
 }
 
 #globalnav {
+   @include font-feature-settings(dlig);
+
   ul {
     list-style: none;
     text-align: right;
