@@ -1,51 +1,53 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @font-face {
   font-family: "Valentina Regular";
-  src: url('/fonts/valentina-regular-webfont.eot?1445368412');
-  src: url('/fonts/valentina-regular-webfont.eot?&1445368412#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1445368412') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1445368412') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1445368412') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1445368412#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?1447469848');
+  src: url('/fonts/valentina-regular-webfont.eot?&1447469848#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1447469848') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1447469848') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1447469848') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1447469848#valentinaregular') format('svg');
 }
 @font-face {
   font-family: "Universum";
-  src: url('/fonts/universum-webfont.eot?1445625476');
-  src: url('/fonts/universum-webfont.eot?&1445625476#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445625476') format('woff2'), url('/fonts/universum-webfont.woff?1445625476') format('woff'), url('/fonts/universum-webfont.ttf?1445625476') format('truetype'), url('/fonts/universum-webfont.svg?1445625476#universum') format('svg');
+  src: url('/fonts/universum-webfont.eot?1445645322');
+  src: url('/fonts/universum-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445645322') format('woff2'), url('/fonts/universum-webfont.woff?1445645322') format('woff'), url('/fonts/universum-webfont.ttf?1445645322') format('truetype'), url('/fonts/universum-webfont.svg?1445645322#universum') format('svg');
 }
 @media screen {
   html {
-    background-image: url("images/n4.jpg");
+    background-image: url("images/summer1.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-bottom: 300px;
+    padding-bottom: auto;
   }
 
   body {
     font-family: 'Valentina Regular';
-    color: #363C40;
-    background-color: rgba(240, 222, 212, 0.5);
+    -moz-font-feature-settings: "dlig=1";
+    -moz-font-feature-settings: "dlig";
+    -ms-font-feature-settings: "dlig";
+    -o-font-feature-settings: "dlig";
+    -webkit-font-feature-settings: "dlig";
+    font-feature-settings: "dlig";
+    color: #05090a;
+    background-color: rgba(255, 236, 225, 0.4);
     padding: 50px;
-    width: 70%;
+    width: 100%;
     margin-top: 0;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
   }
 
   a:link {
-    color: #2e5560;
+    color: #26464F;
   }
   a:visited {
-    color: #1e373e;
+    color: #526368;
   }
   a:hover, a:focus {
-    color: #663e5c;
+    color: #B23794;
   }
   a:active {
-    color: #4a3f2d;
-  }
-
-  h1 {
-    -webkits-font-variant-ligatures: common-ligatures;
-    font-variant-ligatures: common-ligatures;
+    color: #4B8A9B;
   }
 
   img {
@@ -82,11 +84,11 @@
   }
   #banner p a i {
     letter-spacing: 6px;
-    color: #898d80;
+    color: #5d9fb1;
   }
   #banner em {
     font-family: "Universum";
-    font-style: normal;
+    font-style: oblique;
   }
 
   #globalnav ul {
