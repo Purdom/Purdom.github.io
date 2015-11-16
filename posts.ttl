@@ -179,4 +179,4 @@
    rdfs:label "Ruth Ozeki" .
 
 <http://dbpedia.org/resource/China_Mi%C3%A9ville> a <http://bibframe.org/vocab/Person>;
-   rdfs:label "China Mieville" .
+   rdfs:label "China Miéville" .
