@@ -1,13 +1,13 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @font-face {
   font-family: "Valentina Regular";
-  src: url('/fonts/valentina-regular-webfont.eot?1447469848');
-  src: url('/fonts/valentina-regular-webfont.eot?&1447469848#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1447469848') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1447469848') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1447469848') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1447469848#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?1447681915');
+  src: url('/fonts/valentina-regular-webfont.eot?&1447681915#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1447681915') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1447681915') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1447681915') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1447681915#valentinaregular') format('svg');
 }
 @font-face {
   font-family: "Universum";
-  src: url('/fonts/universum-webfont.eot?1445645322');
-  src: url('/fonts/universum-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445645322') format('woff2'), url('/fonts/universum-webfont.woff?1445645322') format('woff'), url('/fonts/universum-webfont.ttf?1445645322') format('truetype'), url('/fonts/universum-webfont.svg?1445645322#universum') format('svg');
+  src: url('/fonts/universum-webfont.eot?1445625476');
+  src: url('/fonts/universum-webfont.eot?&1445625476#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445625476') format('woff2'), url('/fonts/universum-webfont.woff?1445625476') format('woff'), url('/fonts/universum-webfont.ttf?1445625476') format('truetype'), url('/fonts/universum-webfont.svg?1445625476#universum') format('svg');
 }
 @media screen {
   html {
@@ -28,24 +28,23 @@
     -webkit-font-feature-settings: "dlig";
     font-feature-settings: "dlig";
     color: #05090a;
-    background-color: rgba(255, 236, 225, 0.4);
+    background-color: rgba(240, 222, 212, 0.6);
     padding: 50px;
-    width: 100%;
-    margin-top: 0;
-    margin-bottom: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0;
   }
 
   a:link {
     color: #26464F;
   }
+
   a:visited {
     color: #526368;
   }
+
   a:hover, a:focus {
     color: #B23794;
   }
+
   a:active {
     color: #4B8A9B;
   }
