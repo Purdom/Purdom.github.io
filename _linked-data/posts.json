@@ -56,7 +56,7 @@
     {
       "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "China Mieville"
+      "rdfs:label": "China Miéville"
     },
     {
       "@id": "http://dbpedia.org/resource/Emiko_Ohnuki-Tierney",

@@ -81,7 +81,7 @@ img {
 }
 
 #banner {
- @include font-feature-settings(dlig); 
+ @include font-feature-settings(dlig swsh salt); 
  @include display-flex;
  @include align-items(flex-end);
  @include justify-content(space-between);
