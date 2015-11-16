@@ -30,7 +30,10 @@
 
 
 html {
-  background-image: url('images/summer1.jpg');
+  @include background-image(
+    linear-gradient(top, rgba(#F0DED4, .4), rgba(#F0DED4, .2)),
+    url('images/summer1.jpg')
+    );
   background-size: cover;
   background-position: bottom center;
   background-repeat:no-repeat;
@@ -40,18 +43,17 @@ html {
 
 body {
   font-family: 'Valentina Regular';
-  @include font-feature-settings(dlig);
-  color: darken(#26464F,20%);
-  background-color: rgba(#F0DED4, .6);
+  color: darken(#26464F, 25%);
   padding: 50px;
   margin: 0;
 }
 
   a:link {
-    color: #26464F;
+    color: darken(#26464F, 20%);
+    @include font-feature-settings(dlig);
   }
   a:visited {
-    color: #526368;
+    color: darken(#526368, 10%)
   }
   a:hover, a:focus {
     color: #B23794;
