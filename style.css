@@ -11,7 +11,7 @@
 }
 @media screen {
   html {
-    background-image: url("images/n4.jpg");
+    background-image: url("images/summer1.jpg");
     background-size: cover;
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -28,25 +28,26 @@
     -webkit-font-feature-settings: "dlig";
     font-feature-settings: "dlig";
     color: #05090a;
-    background-color: rgba(240, 222, 212, 0.6);
+    background-color: rgba(240, 222, 212, 0.4);
     padding: 50px;
-    width: 70%;
+    width: 100%;
     margin-top: 0;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
   }
 
   a:link {
-    color: #2e5560;
+    color: #26464F;
   }
   a:visited {
-    color: #1e373e;
+    color: #526368;
   }
   a:hover, a:focus {
-    color: #663e5c;
+    color: #B23794;
   }
   a:active {
-    color: #4a3f2d;
+    color: #4B8A9B;
   }
 
   img {
