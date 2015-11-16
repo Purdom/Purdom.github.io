@@ -158,6 +158,13 @@ img {
   border-top: 1px solid rgba(#26464F, 0.6);
 }
 
+.alternatives {
+    font-size: 40px;
+    word-wrap:break-word;
+   @include font-feature-settings(ss09);
+}
+
+
 .social {
     list-style:none;
     margin:0;

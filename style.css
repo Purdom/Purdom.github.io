@@ -1,13 +1,13 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 @font-face {
   font-family: "Valentina Regular";
-  src: url('/fonts/valentina-regular-webfont.eot?1447681915');
-  src: url('/fonts/valentina-regular-webfont.eot?&1447681915#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1447681915') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1447681915') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1447681915') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1447681915#valentinaregular') format('svg');
+  src: url('/fonts/valentina-regular-webfont.eot?1447472436');
+  src: url('/fonts/valentina-regular-webfont.eot?&1447472436#iefix') format('embedded-opentype'), url('/fonts/valentina-regular-webfont.woff2?1447469848') format('woff2'), url('/fonts/valentina-regular-webfont.woff?1447472436') format('woff'), url('/fonts/valentina-regular-webfont.ttf?1447472436') format('truetype'), url('/fonts/valentina-regular-webfont.svg?1447472436#valentinaregular') format('svg');
 }
 @font-face {
   font-family: "Universum";
-  src: url('/fonts/universum-webfont.eot?1445625476');
-  src: url('/fonts/universum-webfont.eot?&1445625476#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445625476') format('woff2'), url('/fonts/universum-webfont.woff?1445625476') format('woff'), url('/fonts/universum-webfont.ttf?1445625476') format('truetype'), url('/fonts/universum-webfont.svg?1445625476#universum') format('svg');
+  src: url('/fonts/universum-webfont.eot?1445645322');
+  src: url('/fonts/universum-webfont.eot?&1445645322#iefix') format('embedded-opentype'), url('/fonts/universum-webfont.woff2?1445645322') format('woff2'), url('/fonts/universum-webfont.woff?1445645322') format('woff'), url('/fonts/universum-webfont.ttf?1445645322') format('truetype'), url('/fonts/universum-webfont.svg?1445645322#universum') format('svg');
 }
 @media screen {
   html {
@@ -151,6 +151,17 @@
   #contentinfo {
     text-align: center;
     border-top: 1px solid rgba(38, 70, 79, 0.6);
+  }
+
+  .alternatives {
+    font-size: 40px;
+    word-wrap: break-word;
+    -moz-font-feature-settings: "ss09=1";
+    -moz-font-feature-settings: "ss09";
+    -ms-font-feature-settings: "ss09";
+    -o-font-feature-settings: "ss09";
+    -webkit-font-feature-settings: "ss09";
+    font-feature-settings: "ss09";
   }
 
   .social {
