@@ -1,28 +1,19 @@
-@import "compass";
+---
+# Styles
+---
+@import "bourbon";
 @import "susy";
 @import "mixins";
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
 
 @include font-face(
     "Valentina Regular",
-    font-files(
-        "valentina-regular-webfont.woff2",
-        "valentina-regular-webfont.woff",
-        "valentina-regular-webfont.ttf",
-        "valentina-regular-webfont.svg#valentinaregular"
-    ),
-    "valentina-regular-webfont.eot"
+    "/fonts/valentina-regular-webfont"
 );
 
 @include font-face(
     "Universum",
-    font-files(
-        "universum-webfont.woff2",
-        "universum-webfont.woff",
-        "universum-webfont.ttf",
-        "universum-webfont.svg#universum"
-    ),
-    "universum-webfont.eot"
+    "/fonts/universum-webfont"
 );
 
 
@@ -81,8 +72,8 @@ img {
 }
 
 #banner {
- @include font-feature-settings(dlig swsh salt); 
- @include display-flex;
+ @include font-feature-settings(dlig swsh salt);
+ @include display(flex);
  @include align-items(flex-end);
  @include justify-content(space-between);
  border-bottom: 1px solid rgba(#B7CDCC, 0.6);
@@ -180,11 +171,12 @@ img {
     }
 
     i {
-        @include adjust-font-size-to(28px);
-        @include adjust-leading-to(2,28px);
-        width:rhythm(2,28px);
-        height:rhythm(2,28px);
-        @include border-radius(50%);
+        font-size: 28px;
+        line-height: 2;
+        width:28px;
+        height:28px;
+        @include border-top-radius(50%);
+        @include border-bottom-radius(50%);
     }
 
 }
