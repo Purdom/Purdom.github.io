@@ -339,6 +339,12 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Neil_Gaiman"
       },
+      "http://purdom.org/reading#desire_to": {
+        "@id": "http://www.worldcat.org/oclc/436030063"
+      },
+      "http://purdom.org/reading#inspired_by": {
+        "@id": "http://purdom.org/named_entities#slab_group"
+      },
       "http://purdom.org/reading#start_date": {
         "@value": "2015-11-09",
         "@type": "xsd:date"
@@ -349,6 +355,15 @@
         },
         {
           "@id": "http://purdom.org/tag#deity_lifecycle"
+        },
+        {
+          "@id": "http://purdom.org/tag#memory"
+        },
+        {
+          "@id": "http://purdom.org/tag#dreams"
+        },
+        {
+          "@id": "http://purdom.org/tag#loss"
         }
       ],
       "rdfs:label": "American Gods"
