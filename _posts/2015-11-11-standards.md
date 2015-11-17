@@ -36,8 +36,8 @@ brilliant idea for a nerdy book club. We are all in.)
 Deep in chapter 7, I am thinking a lot about the deep issues the US has
 with <span property="purdom:theme_of" resource="ptag:imprisonment">imprisonment</span>,
 <span property="purdom:theme_of" resource="ptag:deity_lifecycle">the life and death of gods</span> or god-time? (Not sure
-that's a thing), memory and dreams--which will inevitably lead back to
-Mieville--and loss.
+that's a thing),<span property="purdom:theme_of" resource="ptag:memory"> memory</spa> and <span property="purdom:theme_of" resource="ptag:dreams">dreams</span>--which will inevitably lead back to
+Miéville--and <span property="purdom:theme_of" resource="ptag:loss">loss</span>.
 
 I am always intrigued that Shadow does not recognize
 the power of gifts bestowed until the gods alert him. He gives almost carelessly, an after-thought.
