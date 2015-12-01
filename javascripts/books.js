@@ -13,20 +13,21 @@ $(function() {
         return "http://www.w3.org/2000/01/rdf-schema#" + thing;
     }
 
-    var personType    = bibframe("Person");
-    var workType      = bibframe("Work");
-    var creator       = bibframe("creator");
-    var leadTo        = purdom("lead_to");
-    var label         = rdfs("label");
-    var charge        = -400;
-    var linkDistance  = 100;
-    var width         = 700;
-    var height        = 500;
-    var hue           = 193;
-    var light         = .35;
-    var radius        = 25;
-    var strokeWidth   = 3;
- 
+    var personType   = bibframe("Person");
+    var workType     = bibframe("Work");
+    var creator      = bibframe("creator");
+    var leadTo       = purdom("lead_to");
+    var inspiredBy   = purdom("inspired_by");
+    var label        = rdfs("label");
+    var charge       = -400;
+    var linkDistance = 100;
+    var width        = 700;
+    var height       = 500;
+    var hue          = 193;
+    var light        = 0.35;
+    var radius       = 25;
+    var strokeWidth  = 3;
+
     function getTypeOf(obj) {
         var type = obj["@type"];
         return (type === undefined ? null : type[0]);
@@ -65,6 +66,58 @@ $(function() {
         return triples.filter(function(obj) {
             return (obj[leadTo] !== undefined);
         });
+    }
+
+    function findInspiredBy(graph) {
+        var expanded = [];
+        for (var i=0; i<graph.length; i++) {
+            var node = graph[i];
+            if (node[inspiredBy] !== undefined) {
+                var inspirations = node[inspiredBy],
+                    o            = node["@id"];
+                for (var j=0; j<inspirations.length; j++) {
+                    expanded.push({s: inspirations[j]["@id"], o: o});
+                }
+            }
+        }
+        return expanded;
+    }
+
+    function findCreateSubject(graph, sId) {
+        var subject = graph.filter(function(n) {
+            return (n["@id"] === sId);
+        });
+        if (subject.length === 0) {
+            var n = {
+                "@id": sId
+            };
+            subject.push(n);
+            graph.push(n);
+        }
+        return subject;
+    }
+
+    function addLeadTo(n, o) {
+        var purdom_lead_to = n[leadTo];
+        if (purdom_lead_to === undefined) {
+            n[leadTo] = purdom_lead_to = [];
+        }
+        purdom_lead_to.push({
+            "@id": o
+        });
+    }
+
+    function expandImplicits(graph) {
+        var expanded = findInspiredBy(graph);
+
+        expanded.forEach(function(expand) {
+            var subjects = findCreateSubject(graph, expand.s);
+            subjects.forEach(function(n) {
+                addLeadTo(n, expand.o);
+            });
+        });
+
+        return graph;
     }
 
     function addPeopleSource(index, link) {
@@ -364,6 +417,7 @@ $(function() {
                 console.log('ERROR:', err);
             } else {
                 window.expanded = expanded;
+                expandImplicits(expanded);
                 graphPeople("#people", expanded);
                 graphBooks("#books", expanded);
             }
