@@ -121,9 +121,7 @@ $(function() {
     }
 
     function addPeopleSource(index, link) {
-        if (getTypeOf(link.link) === personType) {
-            link.source = link.link;
-        } else {
+        if (getTypeOf(link.link) === workType) {
             var source = (link.link[creator] || [])
                 .map(function(obj) {
                     return index[obj["@id"]];
@@ -133,6 +131,8 @@ $(function() {
             } else {
                 link.source = source[0];
             }
+        } else {
+            link.source = link.link;
         }
         return link;
     }
