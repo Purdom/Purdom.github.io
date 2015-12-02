@@ -117,6 +117,8 @@
 <http://dbpedia.org/resource/Vladimir_Nabokov> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Vladimir Nabokov" .
 
+<http://purdom.org/named_entities#slab_group> rdfs:label "colleagues in the Scholars’ Lab" .
+
 <http://uva.worldcat.org/oclc/18163210> a <http://bibframe.org/vocab/Work>;
    rdfs:label "Dictionary of the Khazars: A Lexicon Novel (female edition)" .
 

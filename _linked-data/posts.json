@@ -122,6 +122,10 @@
       "rdfs:label": "Vladimir Nabokov"
     },
     {
+      "@id": "http://purdom.org/named_entities#slab_group",
+      "rdfs:label": "colleagues in the Scholars’ Lab"
+    },
+    {
       "@id": "http://uva.worldcat.org/oclc/18163210",
       "@type": "http://bibframe.org/vocab/Work",
       "rdfs:label": "Dictionary of the Khazars: A Lexicon Novel (female edition)"

@@ -28,7 +28,8 @@ For each journal entry, I want to note:
 To practice, I am re-reading <a href="http://dbpedia.org/resource/Neil_Gaiman" property="creator">
 <span about="http://dbpedia.org/resource/Neil_Gaiman" typeof="Person" property="rdfs:label">Neil Gaiman</span></a>'s <em property="rdfs:label">American Gods</em>. I started
 reading <span property="purdom:start_date" datatype="xsd:date" value="2015-11-09">09 November 2015</span>. While hard to track, the first reading was
-prompted by my <span property="purdom:inspired_by" resource="entities:slab_group" >colleagues in the Scholars' Lab</span>; and happily, my current
+prompted by my <span property="purdom:inspired_by" resource="entities:slab_group" >
+<span about="entities:slab_group" property="rdfs:label">colleagues in the Scholars' Lab</span></span>; and happily, my current
 re-reading was also prompted by those in the SLab (Ronda has the
 brilliant idea for a nerdy book club. We are all in.).
 
