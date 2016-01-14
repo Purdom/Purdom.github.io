@@ -2,13 +2,8 @@
 layout: book
 title: Standards emerge, American Gods
 categories: book
-vocab: http://bibframe.org/vocab/
 resource: http://www.worldcat.org/oclc/46393953
 typeof: Work
-prefix:
-  purdom: http://purdom.org/reading#
-  entities: http://purdom.org/named_entities#
-  ptag: http://purdom.org/tag#
 ---
 
 In the course of this project, I realize I am a much happier reader
