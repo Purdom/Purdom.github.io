@@ -16,7 +16,7 @@ than writer! Perhaps a standardized set of metadata, elements I would
 capture for each journal entry, could help ritualize the act of writing.
 Can one 'sneak up' on their own ideas? It is worth an attempt.
 
-For each journal entry, I want to note:
+For each journal entry, I will note:
 
 * Author
 * Title
