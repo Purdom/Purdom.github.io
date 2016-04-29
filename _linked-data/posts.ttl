@@ -70,6 +70,8 @@
    rdfs:label "Three moments of an explosion"@en;
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
 
+<http://www.worldcat.org/oclc/21678602> a <http://bibframe.org/vocab/Work> .
+
 <http://www.worldcat.org/oclc/46393953> a <http://bibframe.org/vocab/Work>;
    rdfs:label "American Gods"@en;
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Neil_Gaiman>;
