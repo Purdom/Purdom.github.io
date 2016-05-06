@@ -2,6 +2,7 @@
   "@context": {
     "rdfa": "http://www.w3.org/ns/rdfa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xhv": "http://www.w3.org/1999/xhtml/vocab#",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
   "@graph": [
@@ -9,12 +10,42 @@
       "@id": "",
       "rdfa:usesVocabulary": {
         "@id": "http://bibframe.org/vocab/"
+      },
+      "xhv:license": {
+        "@id": "http://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "@id": "#banner",
+      "xhv:role": {
+        "@id": "xhv:banner"
+      }
+    },
+    {
+      "@id": "#contentinfo",
+      "xhv:role": {
+        "@id": "xhv:contentinfo"
+      }
+    },
+    {
+      "@id": "#globalnav",
+      "xhv:role": {
+        "@id": "xhv:navigation"
+      }
+    },
+    {
+      "@id": "#main",
+      "xhv:role": {
+        "@id": "xhv:main"
       }
     },
     {
       "@id": "http://dbpedia.org/resouce/Ruth_Ozeki",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Ruth Ozeki"
+      "rdfs:label": {
+        "@value": "Ruth Ozeki",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Azar_Nafisi",
@@ -36,42 +67,66 @@
       "http://purdom.org/reading#lead_to": {
         "@id": "http://www.worldcat.org/oclc/7197128"
       },
-      "rdfs:label": "Azar Nafisi"
+      "rdfs:label": {
+        "@value": "Azar Nafisi",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Bertrand_Russell",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Betrand Russell"
+      "rdfs:label": {
+        "@value": "Betrand Russell",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/C._S._Lewis",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "CS Lewis"
+      "rdfs:label": {
+        "@value": "CS Lewis",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Catherynne_M._Valente",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Catherynne Valente"
+      "rdfs:label": {
+        "@value": "Catherynne Valente",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "China Miéville"
+      "rdfs:label": {
+        "@value": "China Miéville",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Emiko_Ohnuki-Tierney",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Emiko Ohnuki-Tierney"
+      "rdfs:label": {
+        "@value": "Emiko Ohnuki-Tierney",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Herodotus",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Herodotus"
+      "rdfs:label": {
+        "@value": "Herodotus",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Homer",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Homer"
+      "rdfs:label": {
+        "@value": "Homer",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Italo_Calvino",
@@ -79,52 +134,89 @@
       "http://purdom.org/reading#lead_to": {
         "@id": "http://uva.worldcat.org/oclc/796756004"
       },
-      "rdfs:label": "Italo Calvino"
+      "rdfs:label": {
+        "@value": "Italo Calvino",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/James_Baldwin",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "James Baldwin"
+      "rdfs:label": {
+        "@value": "James Baldwin",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Jane_Austen",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Jane Austen"
+      "rdfs:label": {
+        "@value": "Jane Austen",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Keith_Miller",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Keith Miller"
+      "rdfs:label": {
+        "@value": "Keith Miller",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Milorad_Pavić",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Milorad Pavic"
+      "rdfs:label": {
+        "@value": "Milorad Pavic",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Neil_Gaiman",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Neil Gaiman"
+      "rdfs:label": {
+        "@value": "Neil Gaiman",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Robert_Fagles",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Robert Fagles"
+      "rdfs:label": {
+        "@value": "Robert Fagles",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Sofia_Samatar",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Sofia Samatar"
+      "rdfs:label": {
+        "@value": "Sofia Samatar",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://dbpedia.org/resource/Vladimir_Nabokov",
       "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": "Vladimir Nabokov"
+      "rdfs:label": {
+        "@value": "Vladimir Nabokov",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://purdom.org/named_entities#slab_group",
+      "rdfs:label": {
+        "@value": "colleagues in the Scholars’ Lab",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/18163210",
       "@type": "http://bibframe.org/vocab/Work",
-      "rdfs:label": "Dictionary of the Khazars: A Lexicon Novel (female edition)"
+      "rdfs:label": {
+        "@value": "Dictionary of the Khazars: A Lexicon Novel (female edition)",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/20825683",
@@ -132,7 +224,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Homer"
       },
-      "rdfs:label": "The Illiad"
+      "rdfs:label": {
+        "@value": "The Illiad",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/232129602",
@@ -140,7 +235,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Catherynne_M._Valente"
       },
-      "rdfs:label": "Palimpsest"
+      "rdfs:label": {
+        "@value": "Palimpsest",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/251203637",
@@ -148,7 +246,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "The City and the City"
+      "rdfs:label": {
+        "@value": "The City and the City",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/3380425",
@@ -156,7 +257,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Italo_Calvino"
       },
-      "rdfs:label": "Invisible Cities"
+      "rdfs:label": {
+        "@value": "Invisible Cities",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/38168295",
@@ -164,7 +268,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resouce/Ruth_Ozeki"
       },
-      "rdfs:label": "My Year of Meats"
+      "rdfs:label": {
+        "@value": "My Year of Meats",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/41875812",
@@ -172,7 +279,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "King Rat"
+      "rdfs:label": {
+        "@value": "King Rat",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/436030063",
@@ -180,7 +290,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "The Kraken: an anatomy"
+      "rdfs:label": {
+        "@value": "The Kraken: an anatomy",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/43622691",
@@ -188,7 +301,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Bertrand_Russell"
       },
-      "rdfs:label": "What I Believe"
+      "rdfs:label": {
+        "@value": "What I Believe",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/45532466",
@@ -196,7 +312,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "Perdido Street Station"
+      "rdfs:label": {
+        "@value": "Perdido Street Station",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/47696637",
@@ -204,7 +323,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Milorad_Pavić"
       },
-      "rdfs:label": "Last Love in Constantinople: A Tarot novel for divination"
+      "rdfs:label": {
+        "@value": "Last Love in Constantinople: A Tarot novel for divination",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/48892404",
@@ -212,7 +334,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Emiko_Ohnuki-Tierney"
       },
-      "rdfs:label": "Kamikaze, Cherry Blossoms, and Nationalisms"
+      "rdfs:label": {
+        "@value": "Kamikaze, Cherry Blossoms, and Nationalisms",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/51832503",
@@ -220,7 +345,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resouce/Ruth_Ozeki"
       },
-      "rdfs:label": "All Over Creation"
+      "rdfs:label": {
+        "@value": "All Over Creation",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/55019061",
@@ -228,7 +356,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "Iron Council"
+      "rdfs:label": {
+        "@value": "Iron Council",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/62533869",
@@ -236,7 +367,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Emiko_Ohnuki-Tierney"
       },
-      "rdfs:label": "Kamikaze Diaries"
+      "rdfs:label": {
+        "@value": "Kamikaze Diaries",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/659766009",
@@ -244,7 +378,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "Embassy Town"
+      "rdfs:label": {
+        "@value": "Embassy Town",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/747527888",
@@ -252,7 +389,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "Railsea"
+      "rdfs:label": {
+        "@value": "Railsea",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/756582258",
@@ -260,7 +400,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Sofia_Samatar"
       },
-      "rdfs:label": "A Stranger in Olondria"
+      "rdfs:label": {
+        "@value": "A Stranger in Olondria",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/772530906",
@@ -282,7 +425,10 @@
           "@id": "http://uva.worldcat.org/oclc/232129602"
         }
       ],
-      "rdfs:label": "The Book on Fire"
+      "rdfs:label": {
+        "@value": "The Book on Fire",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/796756004",
@@ -307,7 +453,10 @@
           "@id": "http://uva.worldcat.org/oclc/43622691"
         }
       ],
-      "rdfs:label": "Tale for the Timebeing"
+      "rdfs:label": {
+        "@value": "Tale for the Timebeing",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/818851874",
@@ -315,7 +464,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Homer"
       },
-      "rdfs:label": "The Odyssey"
+      "rdfs:label": {
+        "@value": "The Odyssey",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/892041303",
@@ -323,7 +475,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Herodotus"
       },
-      "rdfs:label": "The Histories"
+      "rdfs:label": {
+        "@value": "The Histories",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://uva.worldcat.org/oclc/907621819",
@@ -331,7 +486,14 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
       },
-      "rdfs:label": "Three moments of an explosion"
+      "rdfs:label": {
+        "@value": "Three moments of an explosion",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/21678602",
+      "@type": "http://bibframe.org/vocab/Work"
     },
     {
       "@id": "http://www.worldcat.org/oclc/46393953",
@@ -366,7 +528,10 @@
           "@id": "http://purdom.org/tag#loss"
         }
       ],
-      "rdfs:label": "American Gods"
+      "rdfs:label": {
+        "@value": "American Gods",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://www.worldcat.org/oclc/7197128",
@@ -377,7 +542,10 @@
       "http://purdom.org/reading#lead_to": {
         "@id": "http://uva.worldcat.org/oclc/3380425"
       },
-      "rdfs:label": "If On A Winter's Night A Traveler"
+      "rdfs:label": {
+        "@value": "If On A Winter's Night A Traveler",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://www.worldcat.org/oclc/885983017",
@@ -385,7 +553,10 @@
       "http://bibframe.org/vocab/creator": {
         "@id": "http://dbpedia.org/resource/Azar_Nafisi"
       },
-      "rdfs:label": "The Republic of the Imagination"
+      "rdfs:label": {
+        "@value": "The Republic of the Imagination",
+        "@language": "en"
+      }
     }
   ]
 }
