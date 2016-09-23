@@ -8,7 +8,7 @@ prefix:
   ptag: http://purdom.org/tag#
 ---
 
-<article class="book {{ page.categories }}" vocab="{{ layout.vocab }}" typeof="{{ page.typeof }}" resource="{{ page.resource }}" prefix="{% for p in layout.prefix %}{{ p[0] }}: {{ p[1] }} {% endfor %}">
+<article class="book {{ page.categories }}" vocab="{{ layout.vocab }}" {% if page.typeof %}typeof="{{ page.typeof }}" {% endif %}{% if page.resource %}resource="{{ page.resource }}" {% endif %}prefix="{% for p in layout.prefix %}{{ p[0] }}: {{ p[1] }} {% endfor %}">
     <h1>{{ page.title }}</h1>
     {{ content }}
 </article>
