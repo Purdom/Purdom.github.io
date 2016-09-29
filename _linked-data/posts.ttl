@@ -207,7 +207,7 @@
 
 <http://uva.worldcat.org/oclc/38168295> a <http://bibframe.org/vocab/Work>;
    rdfs:label "My Year of Meats"@en;
-   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki> .
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Ruth_Ozeki> .
 
 <http://uva.worldcat.org/oclc/43622691> a <http://bibframe.org/vocab/Work>;
    rdfs:label "What I Believe"@en;
@@ -223,7 +223,7 @@
 
 <http://uva.worldcat.org/oclc/51832503> a <http://bibframe.org/vocab/Work>;
    rdfs:label "All Over Creation"@en;
-   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki> .
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Ruth_Ozeki> .
 
 <http://uva.worldcat.org/oclc/62533869> a <http://bibframe.org/vocab/Work>;
    rdfs:label "Kamikaze Diaries"@en;
@@ -235,7 +235,7 @@
 
 <http://uva.worldcat.org/oclc/796756004> a <http://bibframe.org/vocab/Work>;
    rdfs:label "Tale for the Timebeing"@en;
-   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki>;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Ruth_Ozeki>;
    <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/51832503>,
      <http://uva.worldcat.org/oclc/38168295>,
      <http://uva.worldcat.org/oclc/48892404>,
@@ -284,7 +284,7 @@
    rdfs:label "Italo Calvino"@en;
    <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/796756004> .
 
-<http://dbpedia.org/resouce/Ruth_Ozeki> a <http://bibframe.org/vocab/Person>;
+<http://dbpedia.org/resource/Ruth_Ozeki> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Ruth Ozeki"@en .
 
 <http://dbpedia.org/resource/China_Mi%C3%A9ville> a <http://bibframe.org/vocab/Person>;

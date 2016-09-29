@@ -52,14 +52,6 @@
       }
     },
     {
-      "@id": "http://dbpedia.org/resouce/Ruth_Ozeki",
-      "@type": "http://bibframe.org/vocab/Person",
-      "rdfs:label": {
-        "@value": "Ruth Ozeki",
-        "@language": "en"
-      }
-    },
-    {
       "@id": "http://dbpedia.org/resource/Azar_Nafisi",
       "@type": "http://bibframe.org/vocab/Person",
       "http://bibframe.org/vocab/referenced": [
@@ -216,6 +208,14 @@
       }
     },
     {
+      "@id": "http://dbpedia.org/resource/Ruth_Ozeki",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Ruth Ozeki",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://dbpedia.org/resource/Sofia_Samatar",
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
@@ -356,7 +356,7 @@
       "@id": "http://uva.worldcat.org/oclc/38168295",
       "@type": "http://bibframe.org/vocab/Work",
       "http://bibframe.org/vocab/creator": {
-        "@id": "http://dbpedia.org/resouce/Ruth_Ozeki"
+        "@id": "http://dbpedia.org/resource/Ruth_Ozeki"
       },
       "rdfs:label": {
         "@value": "My Year of Meats",
@@ -433,7 +433,7 @@
       "@id": "http://uva.worldcat.org/oclc/51832503",
       "@type": "http://bibframe.org/vocab/Work",
       "http://bibframe.org/vocab/creator": {
-        "@id": "http://dbpedia.org/resouce/Ruth_Ozeki"
+        "@id": "http://dbpedia.org/resource/Ruth_Ozeki"
       },
       "rdfs:label": {
         "@value": "All Over Creation",
@@ -524,7 +524,7 @@
       "@id": "http://uva.worldcat.org/oclc/796756004",
       "@type": "http://bibframe.org/vocab/Work",
       "http://bibframe.org/vocab/creator": {
-        "@id": "http://dbpedia.org/resouce/Ruth_Ozeki"
+        "@id": "http://dbpedia.org/resource/Ruth_Ozeki"
       },
       "http://purdom.org/reading#lead_to": [
         {
