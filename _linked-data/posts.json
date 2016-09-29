@@ -40,6 +40,18 @@
       }
     },
     {
+      "@id": "http://as.virginia.edu/news/virginia-festival-book-features-many-arts-sciences",
+      "@type": "http://bibframe.org/vocab/Event"
+    },
+    {
+      "@id": "http://dbpedia.org/page/Michel-Rolph_Trouillot",
+      "@type": "http://bibframe.org/vocab/person",
+      "rdfs:label": {
+        "@value": "Trouillot, Michel-Rolph",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://dbpedia.org/resouce/Ruth_Ozeki",
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
@@ -105,6 +117,14 @@
       }
     },
     {
+      "@id": "http://dbpedia.org/resource/Diane_Ackerman",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Diane Ackerman",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://dbpedia.org/resource/Emiko_Ohnuki-Tierney",
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
@@ -156,6 +176,14 @@
       }
     },
     {
+      "@id": "http://dbpedia.org/resource/Jedediah_Purdy",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Purdy, Jedediah",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://dbpedia.org/resource/Keith_Miller",
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
@@ -196,6 +224,22 @@
       }
     },
     {
+      "@id": "http://dbpedia.org/resource/Timothy_Morton",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Tim Morton",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://dbpedia.org/resource/Verne_Harris",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Verne Harris",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://dbpedia.org/resource/Vladimir_Nabokov",
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
@@ -204,9 +248,55 @@
       }
     },
     {
+      "@id": "http://inkdroid.org/about/",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Ed Summers",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://jeffreyjeromecohen.com/",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Jeffrey Jerome Cohen",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://nowviskie.org/2014/anthropocene/",
+      "@type": "http://bibframe.org/vocab/BlogPost",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://nowviskie.org/bio/"
+      },
+      "rdfs:label": {
+        "@value": "digital humanities in the anthropocene",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://nowviskie.org/bio/",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Bethany Nowviskie",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://purdom.org/named_entities#slab_group",
       "rdfs:label": {
         "@value": "colleagues in the Scholars’ Lab",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://salvage.zone/in-print/the-limits-of-utopia/",
+      "@type": "http://bibframe.org/vocab/BlogPost",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://dbpedia.org/resource/China_Mi%C3%A9ville"
+      },
+      "rdfs:label": {
+        "@value": "Limits of Utopia",
         "@language": "en"
       }
     },
@@ -492,8 +582,47 @@
       }
     },
     {
+      "@id": "http://www.apc.uct.ac.za/apc/researchers/nrf/professor-carolyn-hamilton",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Carolyn Hamilton",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://www.worldcat.org/oclc/21678602",
       "@type": "http://bibframe.org/vocab/Work"
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/32429321",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://dbpedia.org/page/Michel-Rolph_Trouillot"
+      },
+      "http://purdom.org/reading#inspired_by": {
+        "@id": "http://inkdroid.org/about/"
+      },
+      "http://purdom.org/reading#lead_to": {
+        "@id": "http://www.worldcat.org/oclc/50432413"
+      },
+      "http://purdom.org/reading#theme_of": [
+        {
+          "@id": "http://purdom.org/tag#race"
+        },
+        {
+          "@id": "http://purdom.org/tag#archives"
+        },
+        {
+          "@id": "http://purdom.org/tag#power"
+        },
+        {
+          "@id": "http://purdom.org/tag#history"
+        }
+      ],
+      "rdfs:label": {
+        "@value": "Silencing the Past: Power and the Production of History",
+        "@language": "en"
+      }
     },
     {
       "@id": "http://www.worldcat.org/oclc/46393953",
@@ -534,6 +663,33 @@
       }
     },
     {
+      "@id": "http://www.worldcat.org/oclc/50432413",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": [
+        {
+          "@id": "http://www.apc.uct.ac.za/apc/researchers/nrf/professor-carolyn-hamilton"
+        },
+        {
+          "@id": "http://dbpedia.org/resource/Verne_Harris"
+        },
+        {
+          "@id": "https://www.hrw.org/about/people/graeme-reid"
+        }
+      ],
+      "rdfs:label": {
+        "@value": "Reconfiguring the Archive",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/692328920",
+      "@type": "http://bibframe.org/vocab/Work",
+      "rdfs:label": {
+        "@value": "Black on Earth: African American Ecoliterary Traditions",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://www.worldcat.org/oclc/7197128",
       "@type": "http://bibframe.org/vocab/Work",
       "http://bibframe.org/vocab/creator": {
@@ -548,6 +704,28 @@
       }
     },
     {
+      "@id": "http://www.worldcat.org/oclc/840465577",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://dbpedia.org/resource/Timothy_Morton"
+      },
+      "rdfs:label": {
+        "@value": "Hyperobjects: Philosophy and Ecology after the End of the World",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/869559136",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://jeffreyjeromecohen.com/"
+      },
+      "rdfs:label": {
+        "@value": "Prismatic Ecology: Ecotheory beyond Green",
+        "@language": "en"
+      }
+    },
+    {
       "@id": "http://www.worldcat.org/oclc/885983017",
       "@type": "http://bibframe.org/vocab/Work",
       "http://bibframe.org/vocab/creator": {
@@ -555,6 +733,87 @@
       },
       "rdfs:label": {
         "@value": "The Republic of the Imagination",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/887450822",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://dbpedia.org/resource/Diane_Ackerman"
+      },
+      "rdfs:label": {
+        "@value": "The Human Age: The World Shaped by Us",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "http://www.worldcat.org/oclc/906121669",
+      "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "http://dbpedia.org/resource/Jedediah_Purdy"
+      },
+      "http://purdom.org/reading#inspired_by": [
+        {
+          "@id": "http://as.virginia.edu/news/virginia-festival-book-features-many-arts-sciences"
+        },
+        {
+          "@id": "http://nowviskie.org/2014/anthropocene/"
+        },
+        {
+          "@id": "http://salvage.zone/in-print/the-limits-of-utopia/"
+        }
+      ],
+      "http://purdom.org/reading#lead_to": [
+        {
+          "@id": "http://www.worldcat.org/oclc/840465577"
+        },
+        {
+          "@id": "http://www.worldcat.org/oclc/869559136"
+        },
+        {
+          "@id": "http://www.worldcat.org/oclc/887450822"
+        },
+        {
+          "@id": "http://www.worldcat.org/oclc/692328920"
+        }
+      ],
+      "http://purdom.org/reading#theme_of": [
+        {
+          "@id": "http://purdom.org/tag#anthropocene"
+        },
+        {
+          "@id": "http://purdom.org/tag#politics"
+        },
+        {
+          "@id": "http://purdom.org/tag#humanities"
+        },
+        {
+          "@id": "http://purdom.org/tag#damage"
+        },
+        {
+          "@id": "http://purdom.org/tag#repair"
+        },
+        {
+          "@id": "http://purdom.org/tag#race"
+        },
+        {
+          "@id": "http://purdom.org/tag#environment"
+        },
+        {
+          "@id": "http://purdom.org/tag#climate"
+        }
+      ],
+      "rdfs:label": {
+        "@value": "After Nature: A Politics for the Anthropocene",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.hrw.org/about/people/graeme-reid",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Graeme Reid",
         "@language": "en"
       }
     }
