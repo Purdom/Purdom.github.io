@@ -45,7 +45,7 @@
     },
     {
       "@id": "http://dbpedia.org/page/Michel-Rolph_Trouillot",
-      "@type": "http://bibframe.org/vocab/person",
+      "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
         "@value": "Trouillot, Michel-Rolph",
         "@language": "en"

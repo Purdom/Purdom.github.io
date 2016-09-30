@@ -41,7 +41,7 @@ influences:
 </div>
 
 <div resource="http://www.worldcat.org/oclc/32429321" typeof="Work">
-author: <span property="creator" resource="http://dbpedia.org/page/Michel-Rolph_Trouillot" typeof="person"><span property="rdfs:label">Trouillot, Michel-Rolph</span></span>
+author: <span property="creator" resource="http://dbpedia.org/page/Michel-Rolph_Trouillot" typeof="Person"><span property="rdfs:label">Trouillot, Michel-Rolph</span></span>
 title: <span property="rdfs:label">Silencing the Past: Power and the Production of History</span>
 
 re-reading: no

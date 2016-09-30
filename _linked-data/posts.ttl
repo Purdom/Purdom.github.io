@@ -119,7 +119,7 @@
 
 <http://as.virginia.edu/news/virginia-festival-book-features-many-arts-sciences> a <http://bibframe.org/vocab/Event> .
 
-<http://dbpedia.org/page/Michel-Rolph_Trouillot> a <http://bibframe.org/vocab/person>;
+<http://dbpedia.org/page/Michel-Rolph_Trouillot> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Trouillot, Michel-Rolph"@en .
 
 <http://dbpedia.org/resource/Azar_Nafisi> a <http://bibframe.org/vocab/Person>;
