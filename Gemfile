@@ -6,4 +6,5 @@ gem "pdfkit"
 
 group :jekyll_plugins do
   gem "jekyll-rdfa", "~> 0.0.3"
+  gem "jekyll-babel"
 end
