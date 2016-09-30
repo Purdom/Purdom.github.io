@@ -115,3 +115,62 @@ function expandImplicits(graph) {
   return graph;
 }
 
+function byType(expanded) {
+  var m = new Map();
+  expanded.forEach(o => {
+    pushIndex(m, o["@type"], t);
+  });
+  return m;
+}
+
+function byS(expanded) {
+  var m = new Map();
+  expanded.forEach(o => {
+    pushIndex(m, o["@id"], o);
+  });
+  return m;
+}
+
+function byP(expanded) {
+  var m = new Map();
+  expanded.forEach(o => {
+    for (var p in o) {
+      if (!p.startsWith("@")) {
+        pushIndex(m, p, o);
+      }
+    }
+  });
+  return m;
+}
+
+function byO(expanded) {
+  var m = new Map();
+  expanded.forEach(o => {
+    for (var p in o) {
+      if (typeof o[p] === 'string') {
+        pushIndex(m, o[p], o);
+      } else {
+        o[p].forEach(v => {
+          var k;
+          if (typeof v === 'string') {
+            k = v;
+          } else if (v["@id"] === undefined) {
+            k = v["@value"];
+          } else {
+            k = v["@id"];
+          }
+          pushIndex(m, k, o);
+        });
+      }
+    }
+  });
+  return m;
+}
+
+function pushIndex(m, k, v) {
+  if (!m.has(k)) {
+    m.set(k, []);
+  }
+  m.get(k).push(v);
+}
+
