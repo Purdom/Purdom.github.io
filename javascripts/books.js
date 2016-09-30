@@ -22,7 +22,7 @@ $(function() {
     var charge       = -400;
     var linkDistance = 100;
     var width        = 700;
-    var height       = 500;
+    var height       = 700;
     var hue          = 193;
     var light        = 0.35;
     var radius       = 25;
