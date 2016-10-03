@@ -272,7 +272,9 @@ h2, h3 {
   padding-left: 3px;
 }
 
-$treeRead: hsl(104, 75%, 15%);
+$treeRead    : hsl(104, 75%, 15%);
+$treePurdom  : hsl(104, 35%, 45%);
+$treeDBPedia : hsl(29, 95%, 45%);
 
 #tree {
     .link {
@@ -285,10 +287,12 @@ $treeRead: hsl(104, 75%, 15%);
     }
 
     .infl-dbpedia {
-        fill: hsl(104, 35%, 45%);
+        fill: $treeDBPedia;
+        stroke: $treeDBPedia;
     }
 
     .infl-purdom {
-        fill: hsl(29, 95%, 45%);
+        fill: $treePurdom;
+        stroke: $treePurdom;
     }
 }
