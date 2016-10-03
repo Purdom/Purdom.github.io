@@ -272,27 +272,33 @@ h2, h3 {
   padding-left: 3px;
 }
 
-$treeRead    : hsl(104, 75%, 15%);
-$treePurdom  : hsl(104, 35%, 45%);
-$treeDBPedia : hsl(29, 95%, 45%);
+$treeReader : hsl(104, 75%, 15%);
+$treeRInfl  : hsl(104, 35%, 45%);
+$treeWriter : hsl(29, 95%, 45%);
+$treeWInfl  : hsl(29, 55%, 75%);
 
 #tree {
     .link {
         stroke-width: 3px;
     }
 
-    .read {
-        fill: $treeRead;
-        stroke: $treeRead;
+    .reader {
+        fill   : $treeReader;
+        stroke : $treeReader;
     }
 
-    .infl-dbpedia {
-        fill: $treeDBPedia;
-        stroke: $treeDBPedia;
+    .reader.influenced {
+        fill   : $treeRInfl;
+        stroke : $treeRInfl;
     }
 
-    .infl-purdom {
-        fill: $treePurdom;
-        stroke: $treePurdom;
+    .writer {
+        fill   : $treeWriter;
+        stroke : $treeWriter;
+    }
+
+    .writer.influenced {
+        fill   : $treeWInfl;
+        stroke : $treeWInfl;
     }
 }
