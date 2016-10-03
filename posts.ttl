@@ -72,6 +72,16 @@
 
 <http://www.worldcat.org/oclc/21678602> a <http://bibframe.org/vocab/Work> .
 
+<http://www.worldcat.org/oclc/32429321> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Silencing the Past: Power and the Production of History"@en;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/page/Michel-Rolph_Trouillot>;
+   <http://purdom.org/reading#inspired_by> <http://inkdroid.org/about/>;
+   <http://purdom.org/reading#lead_to> <http://www.worldcat.org/oclc/50432413>;
+   <http://purdom.org/reading#theme_of> <http://purdom.org/tag#race>,
+     <http://purdom.org/tag#archives>,
+     <http://purdom.org/tag#power>,
+     <http://purdom.org/tag#history> .
+
 <http://www.worldcat.org/oclc/46393953> a <http://bibframe.org/vocab/Work>;
    rdfs:label "American Gods"@en;
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Neil_Gaiman>;
@@ -87,6 +97,30 @@
 <http://www.worldcat.org/oclc/885983017> a <http://bibframe.org/vocab/Work>;
    rdfs:label "The Republic of the Imagination"@en;
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Azar_Nafisi> .
+
+<http://www.worldcat.org/oclc/906121669> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "After Nature: A Politics for the Anthropocene"@en;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Jedediah_Purdy>;
+   <http://purdom.org/reading#inspired_by> <http://as.virginia.edu/news/virginia-festival-book-features-many-arts-sciences>,
+     <http://nowviskie.org/2014/anthropocene/>,
+     <http://salvage.zone/in-print/the-limits-of-utopia/>;
+   <http://purdom.org/reading#lead_to> <http://www.worldcat.org/oclc/840465577>,
+     <http://www.worldcat.org/oclc/869559136>,
+     <http://www.worldcat.org/oclc/887450822>,
+     <http://www.worldcat.org/oclc/692328920>;
+   <http://purdom.org/reading#theme_of> <http://purdom.org/tag#anthropocene>,
+     <http://purdom.org/tag#politics>,
+     <http://purdom.org/tag#humanities>,
+     <http://purdom.org/tag#damage>,
+     <http://purdom.org/tag#repair>,
+     <http://purdom.org/tag#race>,
+     <http://purdom.org/tag#environment>,
+     <http://purdom.org/tag#climate> .
+
+<http://as.virginia.edu/news/virginia-festival-book-features-many-arts-sciences> a <http://bibframe.org/vocab/Event> .
+
+<http://dbpedia.org/page/Michel-Rolph_Trouillot> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Trouillot, Michel-Rolph"@en .
 
 <http://dbpedia.org/resource/Azar_Nafisi> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Azar Nafisi"@en;
@@ -105,6 +139,9 @@
 <http://dbpedia.org/resource/Catherynne_M._Valente> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Catherynne Valente"@en .
 
+<http://dbpedia.org/resource/Diane_Ackerman> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Diane Ackerman"@en .
+
 <http://dbpedia.org/resource/Herodotus> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Herodotus"@en .
 
@@ -113,6 +150,9 @@
 
 <http://dbpedia.org/resource/Jane_Austen> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Jane Austen"@en .
+
+<http://dbpedia.org/resource/Jedediah_Purdy> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Purdy, Jedediah"@en .
 
 <http://dbpedia.org/resource/Keith_Miller> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Keith Miller"@en .
@@ -126,10 +166,33 @@
 <http://dbpedia.org/resource/Sofia_Samatar> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Sofia Samatar"@en .
 
+<http://dbpedia.org/resource/Timothy_Morton> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Tim Morton"@en .
+
+<http://dbpedia.org/resource/Verne_Harris> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Verne Harris"@en .
+
 <http://dbpedia.org/resource/Vladimir_Nabokov> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Vladimir Nabokov"@en .
 
+<http://inkdroid.org/about/> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Ed Summers"@en .
+
+<http://jeffreyjeromecohen.com/> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Jeffrey Jerome Cohen"@en .
+
+<http://nowviskie.org/2014/anthropocene/> a <http://bibframe.org/vocab/BlogPost>;
+   rdfs:label "digital humanities in the anthropocene"@en;
+   <http://bibframe.org/vocab/creator> <http://nowviskie.org/bio/> .
+
+<http://nowviskie.org/bio/> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Bethany Nowviskie"@en .
+
 <http://purdom.org/named_entities#slab_group> rdfs:label "colleagues in the Scholars’ Lab"@en .
+
+<http://salvage.zone/in-print/the-limits-of-utopia/> a <http://bibframe.org/vocab/BlogPost>;
+   rdfs:label "Limits of Utopia"@en;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/China_Mi%C3%A9ville> .
 
 <http://uva.worldcat.org/oclc/18163210> a <http://bibframe.org/vocab/Work>;
    rdfs:label "Dictionary of the Khazars: A Lexicon Novel (female edition)"@en .
@@ -144,7 +207,7 @@
 
 <http://uva.worldcat.org/oclc/38168295> a <http://bibframe.org/vocab/Work>;
    rdfs:label "My Year of Meats"@en;
-   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki> .
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Ruth_Ozeki> .
 
 <http://uva.worldcat.org/oclc/43622691> a <http://bibframe.org/vocab/Work>;
    rdfs:label "What I Believe"@en;
@@ -160,7 +223,7 @@
 
 <http://uva.worldcat.org/oclc/51832503> a <http://bibframe.org/vocab/Work>;
    rdfs:label "All Over Creation"@en;
-   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki> .
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Ruth_Ozeki> .
 
 <http://uva.worldcat.org/oclc/62533869> a <http://bibframe.org/vocab/Work>;
    rdfs:label "Kamikaze Diaries"@en;
@@ -172,17 +235,44 @@
 
 <http://uva.worldcat.org/oclc/796756004> a <http://bibframe.org/vocab/Work>;
    rdfs:label "Tale for the Timebeing"@en;
-   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resouce/Ruth_Ozeki>;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Ruth_Ozeki>;
    <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/51832503>,
      <http://uva.worldcat.org/oclc/38168295>,
      <http://uva.worldcat.org/oclc/48892404>,
      <http://uva.worldcat.org/oclc/62533869>,
      <http://uva.worldcat.org/oclc/43622691> .
 
+<http://www.apc.uct.ac.za/apc/researchers/nrf/professor-carolyn-hamilton> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Carolyn Hamilton"@en .
+
+<http://www.worldcat.org/oclc/50432413> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Reconfiguring the Archive"@en;
+   <http://bibframe.org/vocab/creator> <http://www.apc.uct.ac.za/apc/researchers/nrf/professor-carolyn-hamilton>,
+     <http://dbpedia.org/resource/Verne_Harris>,
+     <https://www.hrw.org/about/people/graeme-reid> .
+
+<http://www.worldcat.org/oclc/692328920> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Black on Earth: African American Ecoliterary Traditions"@en .
+
 <http://www.worldcat.org/oclc/7197128> a <http://bibframe.org/vocab/Work>;
    rdfs:label "If On A Winter's Night A Traveler"@en;
    <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Italo_Calvino>;
    <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/3380425> .
+
+<http://www.worldcat.org/oclc/840465577> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Hyperobjects: Philosophy and Ecology after the End of the World"@en;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Timothy_Morton> .
+
+<http://www.worldcat.org/oclc/869559136> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "Prismatic Ecology: Ecotheory beyond Green"@en;
+   <http://bibframe.org/vocab/creator> <http://jeffreyjeromecohen.com/> .
+
+<http://www.worldcat.org/oclc/887450822> a <http://bibframe.org/vocab/Work>;
+   rdfs:label "The Human Age: The World Shaped by Us"@en;
+   <http://bibframe.org/vocab/creator> <http://dbpedia.org/resource/Diane_Ackerman> .
+
+<https://www.hrw.org/about/people/graeme-reid> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Graeme Reid"@en .
 
 <http://dbpedia.org/resource/Emiko_Ohnuki-Tierney> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Emiko Ohnuki-Tierney"@en .
@@ -194,7 +284,7 @@
    rdfs:label "Italo Calvino"@en;
    <http://purdom.org/reading#lead_to> <http://uva.worldcat.org/oclc/796756004> .
 
-<http://dbpedia.org/resouce/Ruth_Ozeki> a <http://bibframe.org/vocab/Person>;
+<http://dbpedia.org/resource/Ruth_Ozeki> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Ruth Ozeki"@en .
 
 <http://dbpedia.org/resource/China_Mi%C3%A9ville> a <http://bibframe.org/vocab/Person>;

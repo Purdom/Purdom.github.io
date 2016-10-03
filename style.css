@@ -242,3 +242,13 @@
   opacity: .6;
   color: #eee;
   padding-left: 3px; }
+
+#tree .link {
+  stroke-width: 3px; }
+#tree .read {
+  fill: #19430a;
+  stroke: #19430a; }
+#tree .infl-dbpedia {
+  fill: #609b4b; }
+#tree .infl-purdom {
+  fill: #e06f06; }
