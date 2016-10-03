@@ -252,7 +252,8 @@
      <https://www.hrw.org/about/people/graeme-reid> .
 
 <http://www.worldcat.org/oclc/692328920> a <http://bibframe.org/vocab/Work>;
-   rdfs:label "Black on Earth: African American Ecoliterary Traditions"@en .
+   rdfs:label "Black on Earth: African American Ecoliterary Traditions"@en;
+   <http://bibframe.org/vocab/creator> <https://www.linkedin.com/in/kimberly-n-ruffin-ph-d-b32256b1> .
 
 <http://www.worldcat.org/oclc/7197128> a <http://bibframe.org/vocab/Work>;
    rdfs:label "If On A Winter's Night A Traveler"@en;
@@ -273,6 +274,9 @@
 
 <https://www.hrw.org/about/people/graeme-reid> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Graeme Reid"@en .
+
+<https://www.linkedin.com/in/kimberly-n-ruffin-ph-d-b32256b1> a <http://bibframe.org/vocab/Person>;
+   rdfs:label "Kimberly N. Ruffin"@en .
 
 <http://dbpedia.org/resource/Emiko_Ohnuki-Tierney> a <http://bibframe.org/vocab/Person>;
    rdfs:label "Emiko Ohnuki-Tierney"@en .
