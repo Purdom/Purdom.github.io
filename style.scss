@@ -1,6 +1,7 @@
 ---
 # Styles
 ---
+
 @import "bourbon";
 @import "susy";
 @import "mixins";
@@ -269,4 +270,25 @@ h2, h3 {
   opacity: .6;
   color: #eee;
   padding-left: 3px;
+}
+
+$treeRead: hsl(104, 75%, 15%);
+
+#tree {
+    .link {
+        stroke-width: 3px;
+    }
+
+    .read {
+        fill: $treeRead;
+        stroke: $treeRead;
+    }
+
+    .infl-dbpedia {
+        fill: hsl(104, 35%, 45%);
+    }
+
+    .infl-purdom {
+        fill: hsl(29, 95%, 45%);
+    }
 }

@@ -174,3 +174,14 @@ function pushIndex(m, k, v) {
   m.get(k).push(v);
 }
 
+function withPostLD(f) {
+  $.get('/posts.json', data => {
+    jsonld.expand(data, (err, expanded) => {
+      if (err !== null) {
+        console.log('ERROR', err);
+      } else {
+        f(expanded);
+      }
+    });
+  });
+}

@@ -133,6 +133,7 @@ $(function() {
       return sourceDestColor(maxSourceCount, maxDestCount, obj);
     };
 
+    window.pg = graph;
     forceDirected(
       $(divId), svg, graph, width, height, colorF, force
     );
@@ -299,10 +300,6 @@ $(function() {
       ;
     });
   }
-
-  window.bibframe = bibframe;
-  window.purdom   = purdom;
-  window.findType = findType;
 
   $.getJSON('/posts.json', function(data) {
     window.triples = data;
