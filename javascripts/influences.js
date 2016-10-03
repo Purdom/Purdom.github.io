@@ -8,6 +8,9 @@
  * - orange      = influenced-by for P's reading.
  */
 
+// TODO: legend
+// TODO: names
+
 const height       = 1024;
 const width        = 960;
 const strokeWidth  = 3;
