@@ -249,6 +249,8 @@
   fill: #19430a;
   stroke: #19430a; }
 #tree .infl-dbpedia {
-  fill: #609b4b; }
+  fill: #e06f06;
+  stroke: #e06f06; }
 #tree .infl-purdom {
-  fill: #e06f06; }
+  fill: #609b4b;
+  stroke: #609b4b; }

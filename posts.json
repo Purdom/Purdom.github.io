@@ -684,6 +684,9 @@
     {
       "@id": "http://www.worldcat.org/oclc/692328920",
       "@type": "http://bibframe.org/vocab/Work",
+      "http://bibframe.org/vocab/creator": {
+        "@id": "https://www.linkedin.com/in/kimberly-n-ruffin-ph-d-b32256b1"
+      },
       "rdfs:label": {
         "@value": "Black on Earth: African American Ecoliterary Traditions",
         "@language": "en"
@@ -814,6 +817,14 @@
       "@type": "http://bibframe.org/vocab/Person",
       "rdfs:label": {
         "@value": "Graeme Reid",
+        "@language": "en"
+      }
+    },
+    {
+      "@id": "https://www.linkedin.com/in/kimberly-n-ruffin-ph-d-b32256b1",
+      "@type": "http://bibframe.org/vocab/Person",
+      "rdfs:label": {
+        "@value": "Kimberly N. Ruffin",
         "@language": "en"
       }
     }
