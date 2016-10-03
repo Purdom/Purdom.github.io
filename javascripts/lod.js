@@ -8,8 +8,16 @@ function purdom(thing) {
   return "http://purdom.org/reading#" + thing;
 }
 
+function rdf(thing) {
+  return "http://www.w3.org/1999/02/22-rdf-syntax-ns#" + thing;
+}
+
 function rdfs(thing) {
   return "http://www.w3.org/2000/01/rdf-schema#" + thing;
+}
+
+function dbo(thing) {
+  return "http://dbpedia.org/ontology/" + thing;
 }
 
 var personType = bibframe("Person");
@@ -18,10 +26,42 @@ var creator = bibframe("creator");
 var leadTo = purdom("lead_to");
 var inspiredBy = purdom("inspired_by");
 var label = rdfs("label");
+var rdfType = rdf("type");
 
 function getTypeOf(obj) {
   var type = obj["@type"];
   return type === undefined ? null : type[0];
+}
+
+function isA(obj, typeUri) {
+  return obj["@type"].find(function (t) {
+    return t === typeUri;
+  }) != null;
+}
+
+function isAny(obj) {
+  var typ = obj["@type"],
+      is = false;
+
+  for (var _len = arguments.length, typeUris = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    typeUris[_key - 1] = arguments[_key];
+  }
+
+  if (Array.isArray(typ)) {
+    var typeSet = new Set();
+    typeUris.forEach(function (t) {
+      return typeSet.add(t);
+    });
+    is = typ.find(function (t) {
+      return typeSet.has(t);
+    }) != null;
+  } else if (typeof typ === 'string') {
+    is = typeUris.find(function (t) {
+      return t === typ;
+    }) != null;
+  }
+
+  return is;
 }
 
 function getLabel(obj) {
@@ -33,7 +73,12 @@ function getLabel(obj) {
     }
     l = "<" + l + ">";
   } else {
-    l = l[0]["@value"];
+    l = l.find(function (n) {
+      return n["@language"] === "en";
+    });
+    if (l != null) {
+      l = l["@value"];
+    }
   }
   return l;
 }

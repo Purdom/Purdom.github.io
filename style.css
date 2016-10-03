@@ -245,12 +245,15 @@
 
 #tree .link {
   stroke-width: 3px; }
-#tree .read {
+#tree .reader {
   fill: #19430a;
   stroke: #19430a; }
-#tree .infl-dbpedia {
-  fill: #e06f06;
-  stroke: #e06f06; }
-#tree .infl-purdom {
+#tree .reader.influenced {
   fill: #609b4b;
   stroke: #609b4b; }
+#tree .writer {
+  fill: #e06f06;
+  stroke: #e06f06; }
+#tree .writer.influenced {
+  fill: #e2be9c;
+  stroke: #e2be9c; }
