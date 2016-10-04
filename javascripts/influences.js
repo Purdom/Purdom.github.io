@@ -14,8 +14,8 @@ const height       = 1024;
 const width        = 960;
 const strokeWidth  = 3;
 const radius       = 6;
-const charge       = -200;
-const linkDistance = 40;
+const charge       = -100;
+const linkDistance = 20;
 
 // get posts.json
 // pull influences according to what p's read.
