@@ -243,17 +243,26 @@
   color: #eee;
   padding-left: 3px; }
 
-#tree .link {
+.tree .link {
   stroke-width: 3px; }
-#tree .reader {
+.tree .reader {
   fill: #19430a;
   stroke: #19430a; }
-#tree .reader.influenced {
+.tree .reader.influenced {
   fill: #609b4b;
   stroke: #609b4b; }
-#tree .writer {
+.tree .writer {
   fill: #e06f06;
   stroke: #e06f06; }
-#tree .writer.influenced {
-  fill: #e2be9c;
-  stroke: #e2be9c; }
+.tree .writer.influenced {
+  fill: #ffa34d;
+  stroke: #ffa34d; }
+
+.legend {
+  font-size: 0.8rem; }
+  .legend .legend-block {
+    width: 200px;
+    float: left; }
+  .legend .legend-text {
+    margin: 0 auto;
+    text-align: center; }

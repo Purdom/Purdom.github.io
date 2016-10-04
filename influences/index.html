@@ -33,7 +33,63 @@
 
   </header>
   <main id="main" role="main">
-    <div id="tree">
+    <div id="tree-legend" class="tree legend">
+
+  <div class="legend-block">
+    <div class="legend-text">
+      This inspired me to read
+    </div>
+    <div class="legend-graphic">
+      <svg width="200" height="30">
+        <line class="link reader" x1="15" y1="15" x2="185" y2="15" />
+        <circle class="node reader" r="6" cx="15" cy="15" />
+        <circle class="node reader" r="6" cx="185" cy="15" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="legend-block">
+    <div class="legend-text">
+      Inspired me to read this by
+    </div>
+    <div class="legend-graphic">
+      <svg width="200" height="30">
+        <line class="link reader influenced" x1="15" y1="15" x2="185" y2="15" />
+        <circle class="node reader" r="6" cx="15" cy="15" />
+        <circle class="node reader influenced" r="6" cx="185" cy="15" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="legend-block">
+    <div class="legend-text">
+      She inspired to write
+    </div>
+    <div class="legend-graphic">
+      <svg width="200" height="30">
+        <line class="link writer" x1="15" y1="15" x2="185" y2="15" />
+        <circle class="node reader" r="6" cx="15" cy="15" />
+        <circle class="node writer" r="6" cx="185" cy="15" />
+      </svg>
+    </div>
+  </div>
+
+  <div class="legend-block">
+    <div class="legend-text">
+      She was inspired to write by
+    </div>
+    <div class="legend-graphic">
+      <svg width="200" height="30">
+        <line class="link writer influenced" x1="15" y1="15" x2="185" y2="15" />
+        <circle class="node reader" r="6" cx="15" cy="15" />
+        <circle class="node writer influenced" r="6" cx="185" cy="15" />
+      </svg>
+    </div>
+  </div>
+
+</div>
+
+<div id="tree" class="tree">
 </div>
 
 <hr />

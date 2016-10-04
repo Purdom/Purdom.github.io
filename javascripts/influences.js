@@ -5,6 +5,8 @@
  * - orange      = influenced-by for P's reading.
  */
 
+// TODO: names
+
 'use strict';
 
 var _slicedToArray = (function () { function sliceIterator(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } return function (arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { return sliceIterator(arr, i); } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }; })();
@@ -111,7 +113,7 @@ var GraphBuilder = (function () {
             if (err !== null) {
               console.log('ERROR', err);
             } else {
-              console.log('It\'s all good.', expanded);
+              // console.log('It\'s all good.', expanded);
               var newNode = _this3.addNewNode(expanded, clsa),
                   nodes = [],
                   link,
@@ -125,7 +127,7 @@ var GraphBuilder = (function () {
 
               if (newData.nodes.length > 0 && newData.link != null) {
                 $('svg').trigger('updateData', [newData]);
-                console.log('triggered updateData', _this3, [newData]);
+                // console.log('triggered updateData', this, [newData]);
               }
             }
           });
@@ -323,7 +325,7 @@ var GraphViewer = (function () {
         return _this7.tick();
       });
       $("svg").on('updateData', function (ev, newData) {
-        console.log('updateData', ev, newData);
+        // console.log('updateData', ev, newData);
         newData.nodes.forEach(function (n) {
           return _this7.nodes.push(n);
         });
