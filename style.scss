@@ -277,7 +277,7 @@ $treeRInfl  : hsl(104,  35%, 45%);
 $treeWriter : hsl( 29,  95%, 45%);
 $treeWInfl  : hsl( 29, 100%, 65%);
 
-#tree {
+.tree {
     .link {
         stroke-width: 3px;
     }
@@ -300,5 +300,19 @@ $treeWInfl  : hsl( 29, 100%, 65%);
     .writer.influenced {
         fill   : $treeWInfl;
         stroke : $treeWInfl;
+    }
+}
+
+.legend {
+    font-size: 0.8rem;
+
+    .legend-block {
+        width: 200px;
+        float: left;
+    }
+
+    .legend-text {
+        margin: 0 auto;
+        text-align: center;
     }
 }
