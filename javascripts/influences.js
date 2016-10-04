@@ -8,7 +8,6 @@
  * - orange      = influenced-by for P's reading.
  */
 
-// TODO: legend
 // TODO: names
 
 const height       = 1024;
@@ -102,7 +101,7 @@ class GraphBuilder {
             if (err !== null) {
               console.log('ERROR', err);
             } else {
-              console.log('It\'s all good.', expanded);
+              // console.log('It\'s all good.', expanded);
               var newNode = this.addNewNode(expanded, clsa),
                   nodes   = [],
                   link, newData;
@@ -115,7 +114,7 @@ class GraphBuilder {
 
               if (newData.nodes.length > 0 && newData.link != null) {
                 $('svg').trigger('updateData', [newData]);
-                console.log('triggered updateData', this, [newData]);
+                // console.log('triggered updateData', this, [newData]);
               }
             }
           });
@@ -288,7 +287,7 @@ class GraphViewer {
 
     this.force.on("tick", () => this.tick());
     $("svg").on('updateData', (ev, newData) => {
-      console.log('updateData', ev, newData);
+      // console.log('updateData', ev, newData);
       newData.nodes.forEach(n => this.nodes.push(n));
       if (newData.link != null) {
         this.links.push(newData.link);
