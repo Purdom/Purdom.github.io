@@ -272,10 +272,10 @@ h2, h3 {
   padding-left: 3px;
 }
 
-$treeReader : hsl(104, 75%, 15%);
-$treeRInfl  : hsl(104, 35%, 45%);
-$treeWriter : hsl(29, 95%, 45%);
-$treeWInfl  : hsl(29, 55%, 75%);
+$treeReader : hsl(104,  75%, 15%);
+$treeRInfl  : hsl(104,  35%, 45%);
+$treeWriter : hsl( 29,  95%, 45%);
+$treeWInfl  : hsl( 29, 100%, 65%);
 
 #tree {
     .link {
