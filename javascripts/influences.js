@@ -19,8 +19,8 @@ var height = 1024;
 var width = 960;
 var strokeWidth = 3;
 var radius = 6;
-var charge = -200;
-var linkDistance = 40;
+var charge = -100;
+var linkDistance = 20;
 
 // get posts.json
 // pull influences according to what p's read.
