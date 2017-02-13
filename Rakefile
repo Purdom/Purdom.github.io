@@ -75,11 +75,13 @@ task :post, [:title, :author, :post_title] do |t, args|
   worldcat = "http://www.worldcat.org/oclc/#{wc_id}"
 
   header = {
-    "title"    => post_title,
-    "date"     => today,
-    "author"   => author_info,
-    "resource" => worldcat,
-    "typeof"   => "Work"
+    "title"      => post_title,
+    "date"       => today,
+    "layout"     => "book",
+    "categories" => "book",
+    "author"     => author_info,
+    "resource"   => worldcat,
+    "typeof"     => "Work"
   }
 
   output_file = "_posts/#{today.strftime('%Y-%m-%d')}-#{slug}.md"
